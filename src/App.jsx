@@ -1,13 +1,10 @@
 import './App.css'
-import Navigation from './components/Navigation'
 
 function App() {
 
   return (
     <>
-      <div className="mx-auto">
-        <Navigation/>
-      </div>
+    <p className="text-3xl">App</p>
     </>
   )
 }
