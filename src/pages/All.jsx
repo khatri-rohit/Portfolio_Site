@@ -6,7 +6,7 @@ const All = () => {
       <div className="p-3 layout container mx-auto">
         <div className="box box1">Box 1</div>
         <div className="box box2">
-          <div className="relative">
+          <div className="relative w-full">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28578.02942788633!2d74.62897523199038!3d26.447550666568937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be6d8fcb7cd01%3A0xcbaf8f12eb8100ee!2sAjmer%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1722859503231!5m2!1sen!2sin"
               width="800"
               height="300"
@@ -15,7 +15,7 @@ const All = () => {
               loading="lazy"
               style={{ border: '10px' }} />
             <img src="/img/face369.png"
-              className="absolute inset-0 w-20"
+              className="absolute w-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               alt="bitmoji"
               title="rohit" />
           </div>
