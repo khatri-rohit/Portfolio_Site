@@ -1,0 +1,25 @@
+.layout{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: minmax(200px,auto);
+
+    .box{
+        padding: .8em;
+    }
+
+    .box1{
+        background-color: #eefbff;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .box2{
+        padding: 0;
+        background-color: #eefbff;
+        grid-column: span 2;
+    }
+    .box3{
+        background-color: #eefbff;
+        grid-column: span 1;
+    }
+}
