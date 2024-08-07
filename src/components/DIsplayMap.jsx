@@ -1,53 +1,31 @@
-/* eslint-disable react/prop-types */
-import {
-    APIProvider,
-    Map,
-    AdvancedMarker,
-    Pin
-} from '@vis.gl/react-google-maps';
-
-const PinMaker = ({ pin }) => {
-    return (
-        <AdvancedMarker
-            key={pin.key}
-            position={pin.location}
-            
-        >
-            <Pin background={'red'} glyphColor={'#000'} borderColor={'#000'} />
-        </AdvancedMarker>
-    )
-
-}
+/* eslint-disable no-undef */
+import { useEffect } from "react";
 
 const DisplayMap = () => {
-    const location = { key: 'Ajmer', location: { lat: 26.4499, lng: 74.6399 } }
+
+    useEffect(() => {
+        (async () => {
+            var map = L.map('map').setView([26.460498, 74.607583], 16.5);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 17,
+            }).addTo(map);
+            map.attributionControl;
+            var myIcon = L.icon({
+                iconUrl: '/img/face369.png',
+                iconSize: [80],
+                iconAnchor: [38, 25],
+            });
+            var marker = L.marker([26.460498, 74.607583], { icon: myIcon })
+                .addTo(map);
+            marker.bindPopup("<b>Hey Viewer👋🏻</b><br>Have a nice day").openPopup();
+        })();
+    })
 
     return (
-        <div className="p-1 border-4">
-            <APIProvider
-                apiKey={"AIzaSyDc1c-mNi4bhIjSgjoCd9yt53aKFkBqZh8"}
-                onLoad={() => console.log('Maps API has loaded.')}>
-                {/* <Map
-                    // style={{ width: '100%', height: '' }}
-                    className='h-[250px] w-full'
-                    defaultCenter={{ lat: 26.4499, lng: 74.6399 }}
-                    defaultZoom={7}
-                    disableDefaultUI={true}
-                /> */}
-                <Map
-                    defaultZoom={15}
-                    disableDefaultUI={true}
-                    gestureHandling={'greedy'}
-                    mapId="33785e10761595c7"
-                    className='h-[250px] w-full'
-                    defaultCenter={{ lat: 26.4499, lng: 74.6399 }}
-                    onCameraChanged={(ev) =>
-                        console.log('camera changed:', ev.detail.center, 'zoom:', ev.detail.zoom)
-                    }>
-                    <PinMaker pin={location} />
-                </Map>
-            </APIProvider>
-        </div>
+        <>
+            <div id="map" className="min-h-[29vh] rounded-3xl">
+            </div>
+        </>
     )
 };
 

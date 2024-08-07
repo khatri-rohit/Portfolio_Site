@@ -6,9 +6,9 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="p-3 flex justify-around items-center md:mb-9 mb-5">
+            <div className="p-3 flex justify-around items-center md:mb-9 mb-5 ">
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
-                    <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center'>
+                    <label className='relative inline-flex cursor-pointer select-none items-center'>
                         <input
                             type='checkbox'
                             checked={dark}
@@ -64,7 +64,7 @@ const Navigation = () => {
                     </label>
                 </div>
                 <div className="nav p-3">
-                    <nav className="bg-slate-50 p-3 rounded-full text-gray-600 drop-shadow-md">
+                    <nav className="bg-[#EEEEEE] p-3 rounded-full text-gray-600 drop-shadow-md">
                         <NavLink to={"/"}
                             className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6'}>
                             All
@@ -77,6 +77,10 @@ const Navigation = () => {
                             className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6'}>
                             Projects
                         </NavLink>
+                        <NavLink to={"/media"}
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6'}>
+                            Media
+                        </NavLink>
                     </nav>
                 </div>
                 <div className="hidden md:block p-1 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 drop-shadow-lg">
@@ -86,7 +90,7 @@ const Navigation = () => {
                 </div>
             </div>
 
-            <div className="p-1 rounded-full drop-shadow-lg md:hidden fixed bottom-0 right-0 m-4">
+            <div className="p-1 rounded-full z-10 drop-shadow-lg md:hidden fixed bottom-0 right-0 m-4">
                 <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center'>
                     <input
                         type='checkbox'

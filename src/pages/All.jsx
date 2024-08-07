@@ -10,10 +10,10 @@ const All = () => {
         <div className="box box1">
           <Box1 />
         </div>
-        <div className="box box2">
+        <div className="box box2 rounded-3xl shadow-xl h-fit">
           <DisplayMap />
         </div>
-        <div className="box box3 border-2 h-full">
+        <div className="box box3 rounded-3xl shadow-xl h-fit">
           <ImageSlider />
         </div>
         {/* <div className="box box4">Box 4</div> */}

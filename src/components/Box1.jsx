@@ -2,12 +2,12 @@
 
 const Box1 = () => {
     return (
-        <div className="p-3 bg-white rounded-2xl shadow-xl">
+        <div className="p-3 bg-white rounded-3xl drop-shadow-2xl">
             <img src="/img/hellocopy.png" alt="img" />
             <div className="aboutme p-3">
                 <p className="text-4xl font-mono">Hello! My name is</p>
                 <p className="name text-8xl font-bold w-fit">
-                    Rohit
+                    Rohit Khatri
                 </p>
                 <p className="font-change text-3xl font-medium leading-tight text-slate-700 text-left ">
                     Hey👋🏻 I'm <span className="border-slate-400 border-b-2 font-semibold">Rohit Khatri</span> from Ajmer. My Goal is to work in a company where I can deliver business value while also leveling up my skills as a developer.
