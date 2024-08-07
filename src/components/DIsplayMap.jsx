@@ -13,7 +13,6 @@ const PinMaker = ({ pin }) => {
             position={pin.location}
             
         >
-            
             <Pin background={'red'} glyphColor={'#000'} borderColor={'#000'} />
         </AdvancedMarker>
     )
