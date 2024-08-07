@@ -20,6 +20,13 @@ const All = () => {
         {/* <div className="w-1/2 bg-white drop-shadow-xl h-[50ch] m-3"></div>
         <div className="w-1/2 bg-white drop-shadow-xl h-[50ch]"></div> */}
       </div>
+
+      {/* <input type="input" list='colors' className='border-4' />
+      <datalist id='colors'>
+        <option value="red">red</option>
+        <option value="blue">yellow</option>
+        <option value="yellow">pink</option>
+      </datalist> */}
     </>
   )
 };
