@@ -9,8 +9,8 @@ const Box1 = () => {
                 <p className="name md:text-8xl font-bold w-fit">
                     Rohit Khatri
                 </p>
-                <p className="font-change md:text-3xl text-2xl my-2 font-medium leading-tight text-slate-700 text-left ">
-                    Hey👋🏻 I'm <span className="border-slate-400 border-b-2 font-semibold">Rohit Khatri</span> from Ajmer. My Goal is to work in a company where I can deliver business value while also leveling up my skills as a developer.
+                <p className="font-change md:text-3xl text-2xl my-2 font-medium leading-tight text-slate-700 text-left translate duration-1000">
+                    Hey👋🏻 I'm <span className="border-slate-400 hover:border-b-2 font-semibold">Rohit Khatri</span> from Ajmer. My Goal is to work in a company where I can deliver business value while also leveling up my skills as a developer.
                 </p>
                 <div className="p-1 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 drop-shadow-lg my-4 w-fit">
                     <button className="bg-white px-3 py-1 rounded-full w-full h-full">

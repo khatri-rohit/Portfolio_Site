@@ -34,16 +34,16 @@ const ImageSlider = () => {
                     className="rounded-3xl shadow-xl" />
                 <div className="absolute flex justify-between items-center p-5 inset-0">
                     <button
-                        className="bg-[#f5fcff8c] p-1 rounded-full"
+                        className="bg-[#1d1c1c56] p-1 rounded-full hover:bg-[#ffffffb7]"
                         onClick={handleCountMinus}>
                         <RiArrowLeftWideFill
-                            className="text-slate-500 text-xl" />
+                            className="text-white text-2xl" />
                     </button>
                     <button
-                        className="bg-[#f5fcff8c] p-1 rounded-full"
+                        className="bg-[#1d1c1c56] p-1 rounded-full hover:bg-[#ffffffb7]"
                         onClick={handleCountPlus}>
                         <RiArrowRightWideFill
-                            className="text-slate-500 text-xl" />
+                            className="text-white text-2xl" />
                     </button>
                 </div>
                 <div
