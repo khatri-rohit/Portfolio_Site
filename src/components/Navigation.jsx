@@ -6,7 +6,7 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="p-3 flex justify-around items-center md:mb-9 mb-5 ">
+            <div className="navigation p-3 flex justify-around items-center md:mb-9 mb-5 ">
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
                     <label className='relative inline-flex cursor-pointer select-none items-center'>
                         <input
@@ -64,27 +64,27 @@ const Navigation = () => {
                     </label>
                 </div>
                 <div className="nav p-3">
-                    <nav className="bg-[#EEEEEE] p-3 rounded-full text-gray-600 drop-shadow-md">
+                    <nav className="bg-[#EEEEEE] p-3 rounded-full text-[#868686] drop-shadow-md">
                         <NavLink to={"/"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
                             All
                         </NavLink>
                         <NavLink to={"/about"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
                             About
                         </NavLink>
                         <NavLink to={"/projects"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
                             Projects
                         </NavLink>
                         <NavLink to={"/media"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
                             Media
                         </NavLink>
                     </nav>
                 </div>
-                <div className="hidden md:block p-1 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 drop-shadow-lg">
-                    <button className="bg-white px-3 py-1 rounded-full w-full h-full">
+                <div className="hidden btn md:block p-1 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 drop-shadow-lg">
+                    <button className="bg-white px-3 py-1 rounded-full w-full h-full hover:px-4 hover:py-2 hover:text-lg">
                         Contact
                     </button>
                 </div>

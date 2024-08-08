@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-const Box1 = () => {
+const Profile = () => {
     return (
         <div className="p-3 bg-white rounded-3xl drop-shadow-2xl">
             <img src="/img/hellocopy.png" alt="img" />
@@ -22,4 +22,4 @@ const Box1 = () => {
     )
 };
 
-export default Box1;
+export default Profile;
