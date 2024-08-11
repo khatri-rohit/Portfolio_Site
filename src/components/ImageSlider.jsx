@@ -29,7 +29,7 @@ const ImageSlider = () => {
 
     return (
         <>
-            <div className="relative">
+            <div className="relative drop-shadow-lg">
                 <img src={`/img/${count}.jpg`} alt=""
                     className="rounded-3xl shadow-xl" />
                 <div className="absolute flex justify-between items-center p-5 inset-0">

@@ -2,7 +2,7 @@
 
 const Profile = () => {
     return (
-        <div className="p-3 bg-white rounded-3xl drop-shadow-2xl">
+        <div className="p-3 bg-white rounded-3xl drop-shadow-lg">
             <img src="/img/hellocopy.png" alt="img" />
             <div className="aboutme p-3">
                 <p className="md:text-4xl text-2xl font-mono">Hello! My name is</p>

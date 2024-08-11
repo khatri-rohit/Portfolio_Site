@@ -1,8 +1,10 @@
+import '../style/All.scss'
 import Profile from '../components/Profile';
 import DisplayMap from '../components/DIsplayMap';
 import ImageSlider from '../components/ImageSlider';
-import '../style/All.scss'
 import StaticPlayer from '../components/StaticPlayer';
+import Skills from '../components/Skills';
+
 
 const All = () => {
   return (
@@ -17,12 +19,12 @@ const All = () => {
         <div className="box box3 rounded-3xl shadow-xl h-fit">
           <ImageSlider />
         </div>
-        <div className="box box3 rounded-3xl shadow-xl">
+        <div className="box box3 rounded-3xl shadow-xl h-fit">
           <StaticPlayer />
         </div>
-        {/* <div className="box box4">Box 4</div> */}
-        {/* <div className="w-1/2 bg-white drop-shadow-xl h-[50ch] m-3"></div>
-        <div className="w-1/2 bg-white drop-shadow-xl h-[50ch]"></div> */}
+        <div className="box box4 rounded-3xl shadow-xl h-fit">
+          <Skills />
+        </div>
       </div>
 
     </>

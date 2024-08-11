@@ -23,7 +23,7 @@ const DisplayMap = () => {
 
     return (
         <>
-            <div id="map" className="min-h-[29vh] rounded-3xl">
+            <div id="map" className="min-h-[29vh] rounded-3xl drop-shadow-lg">
             </div>
         </>
     )
