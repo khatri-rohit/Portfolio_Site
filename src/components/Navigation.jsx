@@ -7,7 +7,7 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="navigation p-4 md:p-3 mx-auto flex justify-around items-center md:mb-9 mb-5 ">
+            <div className="border-b-4 border-black p-4 md:p-3 mx-auto flex justify-around items-center md:mb-9 mb-5 ">
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
                     <label className='relative inline-flex cursor-pointer select-none items-center'>
                         <input

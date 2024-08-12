@@ -1,0 +1,31 @@
+.mediaLayout{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: minmax(200px,auto);
+    padding: 5em;
+    
+    .twitter{
+        grid-column: span 2;
+    }
+    .linkedIn{
+        grid-column: span 1;
+    }
+    .github{
+        grid-column: span 1;
+    }
+    .spotify{
+        grid-column: span 2;
+    }
+    .insta{
+        grid-column: span 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mediaLayout {
+        display: block;
+        padding: 2em;
+    }
+}  

@@ -20,7 +20,7 @@ const All = () => {
   if (loading) {
     return (
       <div
-        className="absolute top-[50%] right-[50%] z-10">
+        className="absolute top-[50%] md:right-[50%] right-[40%] z-10">
         <BounceLoader
           color="#5B99C2"
           size={71}
@@ -36,16 +36,16 @@ const All = () => {
         <div className="box box1">
           <Profile />
         </div>
-        <div className="box box2 shadow-xl">
+        <div className="box box2">
           <DisplayMap />
         </div>
-        <div className="box box3 shadow-xl">
+        <div className="box box3">
           <ImageSlider />
         </div>
-        <div className="box box3 shadow-xl">
+        <div className="box box3">
           <StaticPlayer />
         </div>
-        <div className="box box4 shadow-xl">
+        <div className="box box4">
           <Skills />
         </div>
       </div>
