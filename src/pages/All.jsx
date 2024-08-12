@@ -1,12 +1,35 @@
-import '../style/All.scss'
+import '../style/All.scss';
 import Profile from '../components/Profile';
 import DisplayMap from '../components/DIsplayMap';
 import ImageSlider from '../components/ImageSlider';
 import StaticPlayer from '../components/StaticPlayer';
 import Skills from '../components/Skills';
+import { useEffect, useState } from 'react';
+import { BounceLoader } from 'react-spinners';
 
 
 const All = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 250)
+  }, [])
+
+  if (loading) {
+    return (
+      <div
+        className="absolute top-[50%] right-[50%] z-10">
+        <BounceLoader
+          color="#5B99C2"
+          size={71}
+          speedMultiplier={2}
+        />
+      </div>
+    )
+  }
+
   return (
     <>
       <div className="layout container mx-auto">

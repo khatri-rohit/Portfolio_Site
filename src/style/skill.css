@@ -4,12 +4,6 @@
     align-items: center;
 }
 
-/* 
-img {
-    max-width: 8em;
-    height: 100px
-} */
-
 .scroller[data-animated="true"] {
     overflow: hidden;
     -webkit-mask: linear-gradient(90deg, transparent, white 50%, white 50%, transparent);

@@ -5,8 +5,10 @@ const Profile = () => {
         <div className="p-3 bg-white rounded-3xl drop-shadow-lg">
             <img src="/img/hellocopy.png" alt="img" />
             <div className="aboutme p-3">
-                <p className="md:text-4xl text-2xl font-mono">Hello! My name is</p>
-                <p className="name md:text-8xl font-bold w-fit">
+                <p className="md:text-4xl text-2xl font-mono">
+                    Hello! My name is
+                </p>
+                <p className="name md:text-7xl font-bold w-fit">
                     Rohit Khatri
                 </p>
                 <p className="font-change md:text-3xl text-2xl my-2 font-medium leading-tight text-slate-700 text-left translate duration-1000">
