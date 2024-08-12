@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 const Navigation = () => {
     const [dark, setDark] = useState(false);
 
     return (
         <>
-            <div className="navigation p-3 flex justify-around items-center md:mb-9 mb-5 ">
+            <div className="navigation p-4 md:p-3 mx-auto flex justify-around items-center md:mb-9 mb-5 ">
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
                     <label className='relative inline-flex cursor-pointer select-none items-center'>
                         <input
@@ -63,22 +64,22 @@ const Navigation = () => {
                         </div>
                     </label>
                 </div>
-                <div className="nav p-3">
-                    <nav className="bg-[#EEEEEE] p-3 rounded-full text-[#868686] drop-shadow-md">
+                <div className="nav md:p-3">
+                    <nav className="bg-[#EEEEEE] p-4 px-5 md:p-3 rounded-full text-[#868686] drop-shadow-md">
                         <NavLink to={"/"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl md:mx-2 py-2 md:px-6 px-2.5' : 'md:mx-2 py-2 md:px-6 px-2.5 hover:text-[#4b4b4b] navlink'}>
                             All
                         </NavLink>
                         <NavLink to={"/about"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl md:mx-2 py-2 md:px-6 px-2.5' : 'md:mx-2 py-2 md:px-6 px-2.5 hover:text-[#4b4b4b] navlink'}>
                             About
                         </NavLink>
                         <NavLink to={"/projects"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl md:mx-2 py-2 md:px-6 px-2.5' : 'md:mx-2 py-2 md:px-6 px-2.5 hover:text-[#4b4b4b] navlink'}>
                             Projects
                         </NavLink>
                         <NavLink to={"/media"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl mx-2 py-2 px-6' : 'mx-2 py-2 px-6 hover:text-[#4b4b4b] navlink'}>
+                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl md:mx-2 py-2 md:px-6 px-2.5' : 'md:mx-2 py-2 md:px-6 px-2.5 hover:text-[#4b4b4b] navlink'}>
                             Media
                         </NavLink>
                     </nav>

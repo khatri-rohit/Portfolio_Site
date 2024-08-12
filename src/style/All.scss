@@ -5,9 +5,15 @@ $font-stack: "Quicksand", sans-serif;
 
 .layout{
     display: grid;
-    gap: 1em;
+    gap: 2em;
     grid-template-columns: repeat(4, 2fr);
     grid-auto-rows: minmax(200px,auto);
+    padding: 5em;
+
+    .box{
+        border-radius: 1.25rem;
+        height: fit-content;
+    }
 
     .box1{
         grid-column: span 2;
@@ -46,6 +52,7 @@ $font-stack: "Quicksand", sans-serif;
 @media (max-width: 768px) {
         .layout {
             display: block;
+            padding: 2em;
             
             .box{
                 margin: 1em 0;
