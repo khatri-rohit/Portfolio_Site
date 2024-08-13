@@ -1,17 +1,21 @@
 
 const Spotify = () => {
     return (
-        <div className="h-full flex items-center rounded-3xl bg-[#F5F7F8] drop-shadow-lg">
+        <div className="h-full md:flex items-center rounded-3xl bg-[#F5F7F8] drop-shadow-lg">
             <div className="w-[29em]">
                 <img src="/img/song_I_Do1.jpg"
                     className="rounded-3xl p-5" />
+                <div className="w-full relative hidden md:block">
+                    <img src="/img/spotify.png"
+                        className="w-10 absolute inset-0 md:w-20" />
+                </div>
             </div>
             <div className="h-[28vh] w-full">
                 <div className="w-full relative">
                     <img src="/img/spotify.png"
-                        className="w-20 absolute inset-0" />
+                        className="w-10 absolute inset-0 md:w-20" />
                 </div>
-                <div className="flex flex-col mt-32">
+                <div className="flex flex-col md:mt-32">
                     <div className="flex items-center">
                         <div className="strings flex mx-2 items-center">
                             <p className="bg-[#39d633] mx-1 rounded-lg string string1"></p>

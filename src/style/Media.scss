@@ -27,5 +27,9 @@
     .mediaLayout {
         display: block;
         padding: 2em;
+        
+        .box {
+            margin: 1em 0;
+        }
     }
 }  

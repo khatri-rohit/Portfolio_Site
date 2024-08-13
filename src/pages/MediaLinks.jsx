@@ -3,9 +3,9 @@ import Github from "../components/Github";
 import ImageSlider from "../components/ImageSlider";
 import LinkedIn from "../components/LinkedIn";
 import Twitter from "../components/Twitter";
-import '../style/Media.scss'
 import { BounceLoader } from "react-spinners";
 import Spotify from "../components/Spotify";
+import '../style/Media.scss';
 
 export const MediaLinks = () => {
     const [loading, setLoading] = useState(true);
