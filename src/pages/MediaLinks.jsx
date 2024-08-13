@@ -5,6 +5,7 @@ import LinkedIn from "../components/LinkedIn";
 import Twitter from "../components/Twitter";
 import { BounceLoader } from "react-spinners";
 import Spotify from "../components/Spotify";
+import Instagram from "../components/Instagram";
 import '../style/Media.scss';
 
 export const MediaLinks = () => {
@@ -44,6 +45,9 @@ export const MediaLinks = () => {
                 </div>
                 <div className="box spotify h-72">
                     <Spotify />
+                </div>
+                <div className="box insta h-72 rounded-3xl">
+                    <Instagram />
                 </div>
             </div>
         </>

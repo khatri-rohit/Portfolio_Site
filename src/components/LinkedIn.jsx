@@ -1,9 +1,9 @@
 
 const LinkedIn = () => {
     return (
-        <div className="h-full flex items-center rounded-3xl bg-[#39b4f1] drop-shadow-lg">
+        <div className="h-full flex items-center rounded-3xl bg-[#0387c9] drop-shadow-lg">
             <img src="/img/linkedIn.png"
-                className="w-52 mx-auto" />
+                className="w-64 mx-auto" />
         </div>
     )
 };
