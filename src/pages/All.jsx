@@ -1,4 +1,3 @@
-import '../style/All.scss';
 import Profile from '../components/Profile';
 import DisplayMap from '../components/DIsplayMap';
 import ImageSlider from '../components/ImageSlider';
@@ -6,6 +5,7 @@ import StaticPlayer from '../components/StaticPlayer';
 import Skills from '../components/Skills';
 import { useEffect, useState } from 'react';
 import { BounceLoader } from 'react-spinners';
+import '../style/All.scss';
 
 
 const All = () => {

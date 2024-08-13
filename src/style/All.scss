@@ -56,6 +56,9 @@ $font-stack: "Quicksand", sans-serif;
             .name:hover{
                 font-size: 5.2em;
             }
+            .background-color{
+                background-image: -webkit-linear-gradient(0deg, #3338b8 20%, #25c1fa 68%);
+            }
         }
     }
     .box2{

@@ -24,11 +24,14 @@ const StaticPlayer = () => {
                     </div>
                     <div className="mx-6 flex items-center justify-around">
                         <div className="strings flex mx-2 items-center">
-                            <p className="bg-[#39d633] mx-1 rounded-lg string string1"></p>
-                            <p className="bg-[#39d633] mx-1 rounded-lg string string2"></p>
-                            <p className="bg-[#39d633] mx-1 rounded-lg string string3"></p>
+                            <p className="bg-[#39d633] mx-1 rounded-lg string string1">
+                            </p>
+                            <p className="bg-[#39d633] mx-1 rounded-lg string string2">
+                            </p>
+                            <p className="bg-[#39d633] mx-1 rounded-lg string string3">
+                            </p>
                         </div>
-                        <p className="text-black font-bold text-lg">
+                        <p className="text-[#39d633] font-bold text-lg">
                             Last Played
                         </p>
                     </div>

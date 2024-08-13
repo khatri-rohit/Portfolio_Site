@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import '../style/Nav.css';
 
 const Navigation = () => {
     const [dark, setDark] = useState(false);
@@ -84,7 +85,7 @@ const Navigation = () => {
                         </NavLink>
                     </nav>
                 </div>
-                <div className="hidden btn md:block p-1 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 drop-shadow-lg">
+                <div className="hidden btn md:block p-1 rounded-full background-color drop-shadow-lg">
                     <button className="bg-white px-3 py-1 rounded-full w-full h-full hover:px-4 hover:py-2 hover:text-lg">
                         Contact
                     </button>
