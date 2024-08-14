@@ -8,7 +8,7 @@ const Skills = () => {
         { name: "Github", img: "/img/skills/github.png" },
         { name: "HTML", img: "/img/skills/html.png" },
         { name: "CSS", img: "/img/skills/css.png" },
-        { name: "Tailwind CSS", img: "/img/skills/tailwind.png", height:"80" },
+        { name: "Tailwind CSS", img: "/img/skills/tailwind.png", height: "80" },
         { name: "Bootstrap", img: "/img/skills/bootstrap.png" },
         { name: "JS", img: "/img/skills/js.png" },
         { name: "React JS", img: "/img/skills/react.png" },
@@ -40,24 +40,25 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="bg-white rounded-3xl p-4 scroller w-full drop-shadow-2xl relative z-10">
-            <p className="text-3xl text-center font-bold mb-2 underline">
+        <div className="bg-white dark:bg-[#222831] rounded-3xl p-4 scroller w-full drop-shadow-2xl relative z-10">
+            <p className="text-3xl text-center font-bold mb-2 underline dark dark:text-indigo-300">
                 Skills
             </p>
-            {/* <div className="absolute h-44 border-4 border-gray-700 w-32 top-[25%] left-[40%]">
-            </div> */}
             <div className="skills p-2 scroller__inner">
                 {
                     skills.map((skill, _) => (
                         <div className="skill mx-4" key={_}>
                             <img src={skill.img}
-                                className={`max-w-32 ${skill?.height ? "h-[85px] mb-2" : "h-[100px]" }  `} />
-                            <p className="text-xl font-bold text-center mt-3 uppercase">
+                                className={`max-w-32 ${skill?.height ? "h-[85px] mb-2" : "h-[100px]"}  `} />
+                            <p className="text-xl font-bold text-center mt-3 uppercase dark:text-white">
                                 {skill.name}
                             </p>
                         </div>
                     ))
                 }
+            </div>
+            <div className="">
+                
             </div>
         </div>
     )

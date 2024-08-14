@@ -6,14 +6,14 @@
 
 .scroller[data-animated="true"] {
     overflow: hidden;
-    -webkit-mask: linear-gradient(90deg, transparent, white 50%, white 50%, transparent);
-    mask: linear-gradient(90deg, transparent, white 50%, white 50% transparent);
+    /* -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 20%, transparent, white 10%, transparent); */
+    /* mask: linear-gradient(90deg, transparent, white 50%, white 50% transparent); */
 }
 
 .scroller[data-animated="true"] .scroller__inner {
     width: fit-content;
     flex-wrap: nowrap;
-    animation: scroll 17s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {

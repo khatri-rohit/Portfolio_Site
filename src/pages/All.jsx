@@ -49,7 +49,6 @@ const All = () => {
           <Skills />
         </div>
       </div>
-
     </>
   )
 };

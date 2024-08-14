@@ -1,26 +1,34 @@
-/* eslint-disable no-unused-vars */
-import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import useTheme from '../context/theme';
 import '../style/Nav.css';
 
 const Navigation = () => {
-    const [dark, setDark] = useState(false);
+
+    const { darkTheme, lightTheme } = useTheme();
+
+    const onChange = (e) => {
+        const darkModeStatus = e.currentTarget.checked
+        if (darkModeStatus) {
+            lightTheme()
+        }
+        else {
+            darkTheme()
+        }
+    }
 
     return (
         <>
-            <div className="border-b-4 border-black p-4 md:p-3 mx-auto flex justify-around items-center md:mb-9 mb-5 ">
+            <div className="border-b-2 border-black dark:border-white p-4 md:p-3 mx-auto flex justify-around items-center md:mb-9 mb-5 ">
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
                     <label className='relative inline-flex cursor-pointer select-none items-center'>
                         <input
                             type='checkbox'
-                            checked={dark}
-                            onChange={() => setDark(prev => !prev)}
+                            onChange={onChange}
                             className='sr-only'
                         />
-                        <div className={`shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full ${dark ? `bg-white` : `bg-slate-500`}`}>
+                        <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full bg-white dark:bg-slate-500">
                             <span
-                                className={`flex h-9 w-9 items-center justify-center rounded 
-                                    ${dark ? 'bg-primary' : 'text-body-color  text-white'}`}
+                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-body-color text-white"
                             >
                                 <svg
                                     width='16'
@@ -45,7 +53,7 @@ const Navigation = () => {
                                 </svg>
                             </span>
                             <span
-                                className={`flex h-9 w-9 items-center justify-center rounded ${dark ? 'bg-primary text-gray-500' : 'text-body-color'}`}
+                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-gray-500 text-body-color"
                             >
                                 <svg
                                     width='16'
@@ -66,9 +74,9 @@ const Navigation = () => {
                     </label>
                 </div>
                 <div className="nav md:p-3">
-                    <nav className="bg-[#EEEEEE] p-4 px-5 md:p-3 rounded-full text-[#868686] drop-shadow-md">
+                    <nav className="bg-[#EEEEEE] dark:bg-[#021729] p-4 px-5 md:p-3 rounded-full dark:text-white drop-shadow-md">
                         <NavLink to={"/"}
-                            className={({ isActive }) => isActive ? 'bg-white rounded-3xl md:mx-2 py-2 md:px-6 px-2.5' : 'md:mx-2 py-2 md:px-6 px-2.5 hover:text-[#4b4b4b] navlink'}>
+                            className={({ isActive }) => isActive ? 'bg-white dark:bg-[#051524] rounded-3xl md:mx-2 py-2 md:px-6 px-2.5' : 'md:mx-2 py-2 md:px-6 px-2.5 hover:text-[#4b4b4b] navlink'}>
                             All
                         </NavLink>
                         <NavLink to={"/about"}
@@ -85,25 +93,23 @@ const Navigation = () => {
                         </NavLink>
                     </nav>
                 </div>
-                <div className="hidden btn md:block p-1 rounded-full background-color drop-shadow-lg">
-                    <button className="bg-white px-3 py-1 rounded-full w-full h-full hover:px-4 hover:py-2 hover:text-lg">
+                <div className="hidden btn md:block p-1.5 rounded-full background-color drop-shadow-lg">
+                    <a className="bg-white dark:bg-slate-500 px-3 py-1 rounded-full w-full h-full dark:text-white">
                         Contact
-                    </button>
+                    </a>
                 </div>
             </div>
 
             <div className="p-1 rounded-full z-10 drop-shadow-lg md:hidden fixed bottom-0 right-0 m-4">
-                <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center'>
+                <label className='relative inline-flex cursor-pointer select-none items-center'>
                     <input
                         type='checkbox'
-                        checked={dark}
-                        onChange={() => setDark(prev => !prev)}
+                        onChange={onChange}
                         className='sr-only'
                     />
-                    <div className={`shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full ${dark ? `bg-white` : `bg-slate-500`}`}>
+                    <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full dark:bg-white bg-slate-500">
                         <span
-                            className={`flex h-9 w-9 items-center justify-center rounded 
-                                    ${dark ? 'bg-primary' : 'text-body-color  text-white'}`}
+                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-body-color  text-white"
                         >
                             <svg
                                 width='16'
@@ -128,7 +134,7 @@ const Navigation = () => {
                             </svg>
                         </span>
                         <span
-                            className={`flex h-9 w-9 items-center justify-center rounded ${dark ? 'bg-primary text-gray-500' : 'text-body-color'}`}
+                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary dark:text-gray-500 text-body-color"
                         >
                             <svg
                                 width='16'

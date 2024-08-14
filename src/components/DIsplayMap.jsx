@@ -1,7 +1,9 @@
 /* eslint-disable no-undef */
 import { useEffect } from "react";
-
+import useTheme from "../context/theme";
 const DisplayMap = () => {
+
+    const { themeMode } = useTheme();
 
     useEffect(() => {
         (async () => {
@@ -19,14 +21,15 @@ const DisplayMap = () => {
                 .addTo(map);
             marker.bindPopup("<b>Hey Viewer👋🏻</b><br>Have a nice day").openPopup();
         })();
-    })
+    }, [themeMode]);
 
     return (
         <>
-            <div id="map" className="min-h-[29vh] rounded-3xl drop-shadow-lg">
+            <div id="map" className="min-h-[29vh] rounded-3xl opacity-85">
             </div>
         </>
     )
 };
+
 
 export default DisplayMap;

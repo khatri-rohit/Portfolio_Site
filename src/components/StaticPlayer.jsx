@@ -7,7 +7,7 @@ const StaticPlayer = () => {
         // Like I Do
         // J.Tajor
         <>
-            <div className="rounded-3xl p-2 drop-shadow-lg bg-white">
+            <div className="rounded-3xl p-2 drop-shadow-lg bg-white dark:bg-[#222831]">
                 <div className="song_img relative flex flex-col items-center justify-center">
                     <img src="/img/song_I_Do.jpg"
                         alt="Spotify_song"
@@ -15,10 +15,10 @@ const StaticPlayer = () => {
                     <img src="https://imgs.search.brave.com/3iIFIesN_QrhEzPhASZLvxTD3C81CDeq_hYb4LdSSvY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE5L1Nwb3RpZnlf/bG9nb193aXRob3V0/X3RleHQuc3Zn"
                         className="absolute inset-0 w-10 p-2" />
                 </div>
-                <div className="flex items-center justify-around p-2">
+                <div className="flex items-center justify-around p-2 dark:text-white">
                     <div className="song_details">
                         <p className="text-xl font-semibold">Like I Do</p>
-                        <p className="text-xs text-slate-700 font-medium">
+                        <p className="text-xs text-slate-700 dark:text-slate-300 font-medium">
                             J.Tajor
                         </p>
                     </div>
