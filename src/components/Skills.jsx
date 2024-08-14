@@ -8,7 +8,7 @@ const Skills = () => {
         { name: "Github", img: "/img/skills/github.png" },
         { name: "HTML", img: "/img/skills/html.png" },
         { name: "CSS", img: "/img/skills/css.png" },
-        { name: "Tailwind CSS", img: "/img/skills/tailwind.png" },
+        { name: "Tailwind CSS", img: "/img/skills/tailwind.png", height:"80" },
         { name: "Bootstrap", img: "/img/skills/bootstrap.png" },
         { name: "JS", img: "/img/skills/js.png" },
         { name: "React JS", img: "/img/skills/react.png" },
@@ -44,14 +44,14 @@ const Skills = () => {
             <p className="text-3xl text-center font-bold mb-2 underline">
                 Skills
             </p>
-            <div className="absolute h-44 border-4 border-gray-700 w-32 top-[25%] left-[40%]">
-            </div>
+            {/* <div className="absolute h-44 border-4 border-gray-700 w-32 top-[25%] left-[40%]">
+            </div> */}
             <div className="skills p-2 scroller__inner">
                 {
                     skills.map((skill, _) => (
                         <div className="skill mx-4" key={_}>
                             <img src={skill.img}
-                                className="max-w-32 h-[100px]" />
+                                className={`max-w-32 ${skill?.height ? "h-[85px] mb-2" : "h-[100px]" }  `} />
                             <p className="text-xl font-bold text-center mt-3 uppercase">
                                 {skill.name}
                             </p>
