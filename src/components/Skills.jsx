@@ -41,7 +41,12 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="bg-white rounded-3xl p-6 scroller w-full">
+        <div className="bg-white rounded-3xl p-4 scroller w-full drop-shadow-2xl relative z-10">
+            <p className="text-3xl text-center font-bold mb-2 underline">
+                Skills
+            </p>
+            <div className="absolute h-44 border-4 border-gray-700 w-32 top-[25%] left-[40%]">
+            </div>
             <div className="skills p-2 scroller__inner">
                 {
                     skills.map((skill, _) => (
