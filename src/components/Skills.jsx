@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { IoMdArrowDropup } from "react-icons/io";
 import '../style/skill.css';
 
 const Skills = () => {
@@ -40,7 +41,7 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="bg-white dark:bg-[#222831] rounded-3xl p-4 scroller w-full drop-shadow-2xl relative z-10">
+        <div className="bg-white dark:bg-[#222831] rounded-3xl p-4 scroller w-full drop-shadow-2xl relative">
             <p className="text-3xl text-center font-bold mb-2 underline dark dark:text-indigo-300">
                 Skills
             </p>
@@ -58,7 +59,7 @@ const Skills = () => {
                 }
             </div>
             <div className="">
-                
+                <IoMdArrowDropup className='dark:text-white text-xl mt-2 mx-auto' />
             </div>
         </div>
     )

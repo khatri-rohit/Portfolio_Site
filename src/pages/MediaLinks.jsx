@@ -21,7 +21,7 @@ export const MediaLinks = () => {
         return (
             <div className="absolute top-[50%] md:right-[50%] right-[40%] z-10">
                 <BounceLoader
-                    color="#5B99C2"
+                    color="#4d91bed2"
                     size={71}
                     speedMultiplier={2}
                 />

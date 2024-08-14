@@ -3,13 +3,15 @@ import { FaArrowRight } from "react-icons/fa6";
 const Twitter = () => {
     return (
         <>
-            <div className="h-full relative flex items-center rounded-3xl bg-[#F5F7F8] dark:bg-gray-500 drop-shadow-lg">
+            <a className="h-full relative flex items-center rounded-3xl bg-[#eeeeee] dark:bg-[#49a7ff] drop-shadow-lg" 
+                href="https://x.com/Rohit_Khatri302"
+                target="_blank">
                 <img src="/img/twitter.png"
-                    className="w-44 mx-auto my-5" />
+                    className="w-44 mx-auto my-10" />
                 <button className="absolute bottom-3 right-4 bg-[#1e201e71] p-2 rounded-3xl">
                     <FaArrowRight className="text-white text-lg" />
                 </button>
-            </div>
+            </a>
         </>
     )
 };

@@ -28,18 +28,17 @@ function App() {
   const [themeMode, setThemeMode] = useState('dark');
   const darkTheme = () => {
     setThemeMode('dark')
-    document.body.style.backgroundColor = "#021526";
   }
 
   const lightTheme = () => {
     setThemeMode('light')
-    document.body.style.backgroundColor = "#f7f7f7";
   }
 
   useEffect(() => {
     document.querySelector('html').classList.remove('dark', 'light');
     document.querySelector('html').classList.add(themeMode);
-    console.log(themeMode);
+    if (themeMode === 'dark') document.body.style.backgroundColor = "#021526";
+    else document.body.style.backgroundColor = "#f7f7f7";
   }, [themeMode])
 
   return (
