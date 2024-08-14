@@ -74,7 +74,7 @@ const Navigation = () => {
                     </label>
                 </div>
                 <div className="nav md:p-3">
-                    <nav className="bg-[#EEEEEE] dark:bg-[#021729] p-4 px-5 md:p-3 rounded-full dark:text-white drop-shadow-md">
+                    <nav className="bg-[#EEEEEE] dark:bg-[#021729] p-4 px-5 md:p-3 rounded-full dark:text-white drop-shadow-lg">
                         <NavLink to={"/"}
                             className={({ isActive }) => isActive ? 'bg-white rounded-3xl md:mx-2 py-2 md:px-6 px-2.5 dark:text-black font-medium' : 'md:mx-2 py-2 md:px-6 px-2.5 hover:text-slate-500 navlink'}>
                             All
