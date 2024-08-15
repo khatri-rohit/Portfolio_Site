@@ -16,7 +16,7 @@ const Profile = () => {
                 </p>
                 <div className="p-2 rounded-full background-color drop-shadow-lg my-4 w-fit">
                     <a className="bg-white dark:bg-slate-500 px-3 py-1 rounded-full w-full h-full dark:text-white"
-                        href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rohitkhatri.dev@gmail.com'>
+                        href="mailto:rohitkhatri.dev@gmail.com">
                         Contact
                     </a>
                 </div>

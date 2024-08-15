@@ -18,7 +18,7 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="border-b-2 border-black dark:border-white p-4 md:p-3 mx-auto flex justify-around items-center md:mb-9 mb-5 ">
+            <div className="border-b-2 border-black dark:border-white p-4 md:p-3 mx-auto flex justify-around items-center"> {/* md:mb-9 mb-5 */}
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
                     <label className='relative inline-flex cursor-pointer select-none items-center'>
                         <input
@@ -95,11 +95,14 @@ const Navigation = () => {
                 </div>
                 <div className="hidden btn md:block p-1.5 rounded-full background-color drop-shadow-lg z-10">
                     <a className="bg-white dark:bg-slate-500 px-3 py-1 rounded-full w-full h-full dark:text-white"
-                        href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rohitkhatri.dev@gmail.com'>
+                        href="mailto:rohitkhatri.dev@gmail.com">
                         Contact
                     </a>
                 </div>
             </div>
+            <p className="md:mb-7 mb-4 bg-yellow-200 text-center font-bold">
+                Under Development
+            </p>
 
             <div className="p-1 rounded-full z-10 drop-shadow-lg md:hidden fixed bottom-0 right-0 m-4">
                 <label className='relative inline-flex cursor-pointer select-none items-center'>
