@@ -7,17 +7,17 @@ const DisplayMap = () => {
 
     useEffect(() => {
         (async () => {
-            var map = L.map('map').setView([26.460498, 74.607583], 16.5);
+            var map = L.map('map').setView([26.459380, 74.608102], 16.5);
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 17,
             }).addTo(map);
             map.attributionControl;
             var myIcon = L.icon({
                 iconUrl: '/img/face369.png',
-                iconSize: [80],
-                iconAnchor: [38, 25],
+                iconSize: [, 80],
+                iconAnchor: [45, 35],
             });
-            var marker = L.marker([26.460498, 74.607583], { icon: myIcon })
+            var marker = L.marker([26.459380, 74.608102], { icon: myIcon })
                 .addTo(map);
             marker.bindPopup("<b>Hey Viewer👋🏻</b><br>Have a nice day").openPopup();
         })();
