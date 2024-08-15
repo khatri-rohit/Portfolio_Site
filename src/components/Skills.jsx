@@ -42,7 +42,7 @@ const Skills = () => {
 
     return (
         <div className="bg-white dark:bg-[#222831] rounded-3xl p-2 scroller w-full drop-shadow-2xl relative">
-            <p className="text-3xl text-center font-bold mb-2 underline dark dark:text-indigo-300">
+            <p className="text-2xl text-center font-bold mb-2 underline dark dark:text-indigo-300">
                 Skills
             </p>
             <div className="skills p-2 scroller__inner">
@@ -50,8 +50,8 @@ const Skills = () => {
                     skills.map((skill, _) => (
                         <div className="skill mx-4" key={_}>
                             <img src={skill.img}
-                                className={`max-w-32 ${skill?.height ? "h-[85px]" : "h-[100px]"}  `} />
-                            <p className="text-xl font-bold text-center mt-3 uppercase dark:text-white">
+                                className={`max-w-28 ${skill?.height ? "h-[85px]" : "h-[100px]"}  `} />
+                            <p className="text-lg font-bold text-center mt-2 uppercase dark:text-white">
                                 {skill.name}
                             </p>
                         </div>

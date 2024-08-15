@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const Twitter = () => {
     return (
         <>
-            <a className="h-full relative flex items-center rounded-3xl bg-[#eeeeee] dark:bg-[#49a7ff] drop-shadow-lg" 
+            <a className="h-full relative flex items-center rounded-3xl bg-[#eeeeee] dark:bg-[#49a7ff] drop-shadow-lg p-5" 
                 href="https://x.com/Rohit_Khatri302"
                 target="_blank">
                 <img src="/img/twitter.png"

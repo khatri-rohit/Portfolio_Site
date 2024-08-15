@@ -1,10 +1,14 @@
+import { useEffect, useState } from 'react';
+import { BounceLoader } from 'react-spinners';
 import Profile from '../components/Profile';
 import DisplayMap from '../components/DIsplayMap';
 import ImageSlider from '../components/ImageSlider';
 import StaticPlayer from '../components/StaticPlayer';
 import Skills from '../components/Skills';
-import { useEffect, useState } from 'react';
-import { BounceLoader } from 'react-spinners';
+import LinkedIn from "../components/LinkedIn";
+import Github from '../components/Github';
+import Twitter from '../components/Twitter';
+import Instagram from '../components/Instagram';
 import '../style/All.scss';
 
 
@@ -47,6 +51,18 @@ const All = () => {
         </div>
         <div className="box box4">
           <Skills />
+        </div>
+        <div className="box box3">
+          <Github />
+        </div>
+        <div className="box box3">
+          <LinkedIn />
+        </div>
+        <div className="box box2">
+          <Twitter />
+        </div>
+        <div className="box insta">
+          <Instagram />
         </div>
       </div>
     </>

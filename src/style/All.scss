@@ -9,12 +9,18 @@ $font-stack: "Quicksand", sans-serif;
     grid-template-columns: repeat(4, 2fr);
     grid-auto-rows: minmax(200px,auto);
     padding: 5em;
+    transition: all .45s ease-in-out;
 
     .box{
         border-radius: 1.25rem;
         height: fit-content;
+        transition: all .20s ease-in-out;
     }
 
+    .box:hover{
+        margin-top: -1em;
+    }
+    
     .box1{
         grid-column: span 2;
         grid-row: span 2;
@@ -70,6 +76,10 @@ $font-stack: "Quicksand", sans-serif;
     }
     .box4{
         grid-column: span 2;
+    }
+    .insta{
+        grid-column: span 1;
+        background: linear-gradient(45deg, #405De6, #5851DB, #833AB4, #C13584, #E1306C,#FD1D1D);    
     }
 }
 

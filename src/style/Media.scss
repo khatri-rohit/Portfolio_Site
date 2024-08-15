@@ -4,7 +4,14 @@
     grid-template-columns: repeat(4, 2fr);
     grid-auto-rows: minmax(200px,auto);
     padding: 5em;
-    
+    transition: all .45s ease-in-out;
+
+    .box{
+        transition: all .45s ease-in-out;
+    }
+    .box:hover{
+        margin-top: -1em;
+    }
     .twitter{
         grid-column: span 2;
     }

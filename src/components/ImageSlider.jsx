@@ -31,7 +31,7 @@ const ImageSlider = () => {
         <>
             <div className="relative drop-shadow-lg">
                 <img src={`/img/${count}.jpg`} alt=""
-                    className="rounded-3xl shadow-xl" />
+                    className="rounded-3xl shadow-xl h-[30vh]" />
                 <div className="absolute flex justify-between items-center p-5 inset-0">
                     <button
                         className="bg-[#1d1c1c56] p-1 rounded-full hover:bg-[#ffffffb7]"

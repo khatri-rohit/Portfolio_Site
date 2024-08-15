@@ -108,9 +108,9 @@ const Navigation = () => {
                         onChange={onChange}
                         className='sr-only'
                     />
-                    <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full dark:bg-white bg-slate-500">
+                    <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full dark:bg-white bg-slate-700">
                         <span
-                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-body-color  text-white"
+                            className="flex h-9 w-9 items-center justify-center rounded dark:text-yellow-300 text-white"
                         >
                             <svg
                                 width='16'
@@ -135,7 +135,7 @@ const Navigation = () => {
                             </svg>
                         </span>
                         <span
-                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary dark:text-gray-500 text-body-color"
+                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-gray-500 text-body-color"
                         >
                             <svg
                                 width='16'
