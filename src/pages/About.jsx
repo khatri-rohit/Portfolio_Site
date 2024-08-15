@@ -9,11 +9,14 @@ import Github from '../components/Github';
 import LinkedIn from '../components/LinkedIn';
 import Twitter from '../components/Twitter';
 import Instagram from '../components/Instagram';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
+    navigate("/about");
     setTimeout(() => {
       setLoading(false);
     }, 250)
@@ -33,7 +36,7 @@ const About = () => {
   }
   return (
     <>
-      <div className="p-20 layout container mx-auto">
+      <div className="layout container mx-auto">
         <div className="box box1">
           <Profile />
         </div>

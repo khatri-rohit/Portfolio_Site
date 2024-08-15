@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BounceLoader } from "react-spinners";
+import { useNavigate } from "react-router-dom";
 import Github from "../components/Github";
 import ImageSlider from "../components/ImageSlider";
 import Twitter from "../components/Twitter";
@@ -13,12 +14,14 @@ import '../style/Media.scss';
 
 export const MediaLinks = () => {
     const [loading, setLoading] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
+        navigate("/media");
         setTimeout(() => {
             setLoading(false);
         }, 250)
-    }, [])
+    })
 
     if (loading) {
         return (
