@@ -2,7 +2,7 @@
 const Spotify = () => {
     return (
         <>
-            <div className="h-full hidden md:flex items-center rounded-3xl bg-[#F5F7F8] drop-shadow-lg">
+            <div className="h-full hidden md:flex items-center rounded-3xl bg-[#F5F7F8] dark:bg-[#222831] drop-shadow-lg">
                 <div className="w-[29em] img">
                     <img src="/img/song_I_Do1.jpg"
                         className="rounded-3xl p-5" />
@@ -24,10 +24,10 @@ const Spotify = () => {
                             </p>
                         </div>
                         <div className="song_details">
-                            <p className="text-6xl font-bold">
+                            <p className="text-6xl font-bold dark:text-white">
                                 Like I Do
                             </p>
-                            <p className="text-xl text-slate-700 font-medium">
+                            <p className="text-xl text-slate-700 dark:text-slate-300 font-medium">
                                 J.Tajor
                             </p>
                         </div>

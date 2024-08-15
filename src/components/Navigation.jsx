@@ -26,9 +26,9 @@ const Navigation = () => {
                             onChange={onChange}
                             className='sr-only'
                         />
-                        <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full bg-white dark:bg-slate-500">
+                        <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full dark:bg-white bg-slate-700">
                             <span
-                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-body-color text-white"
+                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary dark:text-yellow-300 text-white"
                             >
                                 <svg
                                     width='16'
@@ -94,7 +94,7 @@ const Navigation = () => {
                     </nav>
                 </div>
                 <div className="hidden btn md:block p-1.5 rounded-full background-color drop-shadow-lg z-10">
-                    <a className="bg-white dark:bg-slate-500 px-3 py-1 rounded-full w-full h-full dark:text-white" 
+                    <a className="bg-white dark:bg-slate-500 px-3 py-1 rounded-full w-full h-full dark:text-white"
                         href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rohitkhatri.dev@gmail.com'>
                         Contact
                     </a>

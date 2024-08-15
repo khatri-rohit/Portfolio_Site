@@ -41,7 +41,7 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="bg-white dark:bg-[#222831] rounded-3xl p-4 scroller w-full drop-shadow-2xl relative">
+        <div className="bg-white dark:bg-[#222831] rounded-3xl p-2 scroller w-full drop-shadow-2xl relative">
             <p className="text-3xl text-center font-bold mb-2 underline dark dark:text-indigo-300">
                 Skills
             </p>
@@ -50,7 +50,7 @@ const Skills = () => {
                     skills.map((skill, _) => (
                         <div className="skill mx-4" key={_}>
                             <img src={skill.img}
-                                className={`max-w-32 ${skill?.height ? "h-[85px] mb-2" : "h-[100px]"}  `} />
+                                className={`max-w-32 ${skill?.height ? "h-[85px]" : "h-[100px]"}  `} />
                             <p className="text-xl font-bold text-center mt-3 uppercase dark:text-white">
                                 {skill.name}
                             </p>
@@ -58,9 +58,7 @@ const Skills = () => {
                     ))
                 }
             </div>
-            <div className="">
-                <IoMdArrowDropup className='dark:text-white text-xl mt-2 mx-auto' />
-            </div>
+            <IoMdArrowDropup className='dark:text-white text-2xl md:text-4xl mx-auto my-0' />
         </div>
     )
 };
