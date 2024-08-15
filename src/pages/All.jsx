@@ -10,19 +10,16 @@ import Github from '../components/Github';
 import Twitter from '../components/Twitter';
 import Instagram from '../components/Instagram';
 import '../style/All.scss';
-import { useNavigate } from 'react-router-dom';
 
 
 const All = () => {
   const [loading, setLoading] = useState(true);
-  const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/");
     setTimeout(() => {
       setLoading(false);
     }, 250)
-  }, [])
+  })
 
   if (loading) {
     return (
