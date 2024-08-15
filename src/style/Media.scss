@@ -1,3 +1,6 @@
+$font-stack: "Quicksand", sans-serif;
+
+
 .mediaLayout{
     display: grid;
     gap: 2em;
@@ -27,6 +30,62 @@
     .insta{
         grid-column: span 1;
         background: linear-gradient(45deg, #405De6, #5851DB, #833AB4, #C13584, #E1306C,#FD1D1D);
+    }
+    .box1{
+        grid-column: span 2;
+        grid-row: span 2;
+        
+        .aboutme{
+
+            .font-change{
+                font-family: $font-stack;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            .name{
+                color: #2E3192;
+                background-image: -webkit-linear-gradient(0deg, #3338b8 20%, #25c1fa 68%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                overflow: hidden; /* Ensures the content is not revealed until the animation */
+                border-right: .019em solid #000000; /* The typwriter cursor */
+                white-space: nowrap; /* Keeps the content on a single line */
+                letter-spacing: .4rem;
+                animation: 
+                    typing 3s steps(40, end),
+                    blink-caret .75s step-end infinite;
+                transition: all .45s ease-in-out;
+            }
+
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 75%; }
+            }
+
+            @keyframes blink-caret {
+                from, to { border-color: transparent }
+                50% { border-color: #000000; }
+            }
+            .name:hover{
+                font-size: 5.2em;
+            }
+            .background-color{
+                background-image: -webkit-linear-gradient(0deg, #3338b8 20%, #25c1fa 68%);
+            }
+        }
+    }
+    .box2{
+        padding: 0;
+        grid-column: span 2;
+    }
+    .box3{
+        grid-column: span 1;
+    }
+    .box4{
+        grid-column: span 2;
     }
 }
 

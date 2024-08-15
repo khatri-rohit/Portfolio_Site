@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
+import { BounceLoader } from "react-spinners";
 import Github from "../components/Github";
 import ImageSlider from "../components/ImageSlider";
 import Twitter from "../components/Twitter";
-import { BounceLoader } from "react-spinners";
 import Spotify from "../components/Spotify";
 import Instagram from "../components/Instagram";
 import LinkedIn from "../components/LinkedIn";
+import Profile from "../components/Profile";
+import DisplayMap from "../components/DIsplayMap";
+import Skills from "../components/Skills";
 import '../style/Media.scss';
 
 export const MediaLinks = () => {
@@ -48,6 +51,15 @@ export const MediaLinks = () => {
                 </div>
                 <div className="box insta h-72 rounded-3xl">
                     <Instagram />
+                </div>
+                <div className="box box1 opacity-20">
+                    <Profile/>
+                </div>
+                <div className="box box2 opacity-20">
+                    <DisplayMap />
+                </div>
+                <div className="box box4 opacity-20">
+                    <Skills />
                 </div>
             </div>
         </>
