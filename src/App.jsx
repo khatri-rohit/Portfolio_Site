@@ -12,6 +12,7 @@ import { MediaLinks } from './pages/MediaLinks.jsx';
 import { ThemeProvider } from './context/theme.js';
 import { useEffect, useState } from 'react';
 import './App.css';
+import Redirect from './pages/Redirect.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route path='/projects' element={<Projects />} />
       <Route path='/media' element={<MediaLinks />} />
+      <Route path='/*' element={<Redirect />} />
     </Route>
   )
 )
