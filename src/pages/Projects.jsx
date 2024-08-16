@@ -5,7 +5,7 @@ const Projects = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    alert("This Part of Site is Still in Prograss...");
+    alert("This Section of the site is currently under development....");
     navigate("/");
   })
 
