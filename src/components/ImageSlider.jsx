@@ -22,7 +22,7 @@ const ImageSlider = () => {
             if (count < 2)
                 setCount(prev => prev + 1)
             else setCount(1)
-        }, 3500);
+        }, 2750);
 
         return () => clearTimeout(timeoutId);
     }, [count])

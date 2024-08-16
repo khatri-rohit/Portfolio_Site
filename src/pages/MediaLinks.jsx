@@ -49,7 +49,7 @@ export const MediaLinks = () => {
                 <div className="box spotify h-72">
                     <Spotify />
                 </div>
-                <div className="box insta h-72 rounded-3xl">
+                <div className="box insta h-72">
                     <Instagram />
                 </div>
                 <div className="box box1 opacity-20">
