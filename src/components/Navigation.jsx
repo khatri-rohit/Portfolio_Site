@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import useTheme from '../context/theme';
 import '../style/Nav.css';
+import { useEffect } from 'react';
 
 const Navigation = () => {
 
@@ -15,6 +16,10 @@ const Navigation = () => {
             darkTheme()
         }
     }
+
+    useEffect(()=>{
+        
+    })
 
     return (
         <>

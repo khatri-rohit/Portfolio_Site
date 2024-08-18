@@ -27,14 +27,29 @@ const router = createBrowserRouter(
 )
 
 function App() {
-  const [themeMode, setThemeMode] = useState('dark');
+  const [themeMode, setThemeMode] = useState('system');
+
   const darkTheme = () => {
-    setThemeMode('dark')
+    setThemeMode('dark');
+    localStorage.setItem("theme", 'dark');
   }
 
   const lightTheme = () => {
-    setThemeMode('light')
+    setThemeMode('light');
+    localStorage.setItem("theme", 'light');
   }
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem("theme");
+    console.log(localTheme);
+    
+    if (localTheme != "system") {
+      setThemeMode(localTheme);
+    } else {
+      const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setThemeMode(isDarkMode ? 'dark' : 'light');
+    }
+  }, [])
 
   useEffect(() => {
     document.querySelector('html').classList.remove('dark', 'light');
