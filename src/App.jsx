@@ -41,13 +41,11 @@ function App() {
 
   useEffect(() => {
     const localTheme = localStorage.getItem("theme");
-    console.log(localTheme);
-    
-    if (localTheme != "system") {
-      setThemeMode(localTheme);
-    } else {
+    if (localTheme === null) {
       const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
       setThemeMode(isDarkMode ? 'dark' : 'light');
+    } else {
+      setThemeMode(localTheme);
     }
   }, [])
 

@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import useTheme from '../context/theme';
 import '../style/Nav.css';
-import { useEffect } from 'react';
 
 const Navigation = () => {
 
@@ -9,21 +8,14 @@ const Navigation = () => {
 
     const onChange = (e) => {
         const darkModeStatus = e.currentTarget.checked
-        if (darkModeStatus) {
-            lightTheme()
-        }
-        else {
-            darkTheme()
-        }
+        if (darkModeStatus) lightTheme()
+        else darkTheme()
     }
-
-    useEffect(()=>{
-        
-    })
 
     return (
         <>
             <div className="border-b-2 border-black dark:border-white p-4 md:p-3 mx-auto flex justify-around items-center"> {/* md:mb-9 mb-5 */}
+                {/* Toogle Btn */}
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
                     <label className='relative inline-flex cursor-pointer select-none items-center'>
                         <input
@@ -78,6 +70,7 @@ const Navigation = () => {
                         </div>
                     </label>
                 </div>
+                {/* Navigation Tabs */}
                 <div className="nav md:p-3">
                     <nav className="bg-[#EEEEEE] dark:bg-[#021729] p-4 px-5 md:p-3 rounded-full dark:text-white drop-shadow-lg">
                         <NavLink to={"/"}
@@ -98,6 +91,7 @@ const Navigation = () => {
                         </NavLink>
                     </nav>
                 </div>
+                {/* Contact */}
                 <div className="hidden btn md:block p-1.5 rounded-full background-color drop-shadow-lg z-10">
                     <a className="bg-white dark:bg-slate-500 px-3 py-1 rounded-full w-full h-full dark:text-white"
                         href="mailto:rohitkhatri.dev@gmail.com">
