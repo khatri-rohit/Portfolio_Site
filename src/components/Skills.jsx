@@ -16,6 +16,7 @@ const Skills = () => {
         { name: "TS", img: "/img/skills/ts.png" },
         { name: "Firebase", img: "/img/skills/firebase.png" },
         { name: "React Router", img: "https://ultimatecourses.com/assets/category/react-router-9c0bb349a7ca8d699e4dcd1ebcdd21dda7198447dfcef928f9cbb0748e1f0ad5.svg" },
+        { name: "React Toolkit", img: "/img/skills/redux.png" },
     ];
 
     useEffect(() => {
