@@ -11,8 +11,8 @@ import { Layout } from './layout/Layout.jsx';
 import { MediaLinks } from './pages/MediaLinks.jsx';
 import { ThemeProvider } from './context/theme.js';
 import { useEffect, useState } from 'react';
-import './App.css';
 import Redirect from './pages/Redirect.jsx';
+import './App.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
