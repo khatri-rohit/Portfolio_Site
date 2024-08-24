@@ -17,7 +17,7 @@ export const MediaLinks = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 250)
+        }, 250);
     })
 
     if (loading) {
