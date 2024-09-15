@@ -47,7 +47,7 @@ function App() {
     } else {
       setThemeMode(localTheme);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     document.querySelector('html').classList.remove('dark', 'light');
