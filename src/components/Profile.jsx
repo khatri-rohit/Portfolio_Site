@@ -8,7 +8,7 @@ const Profile = () => {
                 <p className="md:text-4xl text-2xl font-mono dark:text-white">
                     Hello! My name is
                 </p>
-                <p className="name md:text-7xl font-bold w-fit">
+                <p className="name md:text-5xl lg:text-7xl font-bold w-fit">
                     Rohit Khatri
                 </p>
                 <p className="font-change md:text-3xl text-2xl my-2 font-medium leading-tight text-slate-700 text-left translate duration-1000 dark:text-white">

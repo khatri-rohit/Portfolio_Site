@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import { BounceLoader } from "react-spinners";
 import Github from "../components/Github";
 // import ImageSlider from "../components/ImageSlider";
-import Twitter from "../components/Twitter";
-import Spotify from "../components/Spotify";
+import DisplayMap from "../components/DIsplayMap";
 import Instagram from "../components/Instagram";
 import LinkedIn from "../components/LinkedIn";
 import Profile from "../components/Profile";
-import DisplayMap from "../components/DIsplayMap";
-import Skills from "../components/Skills";
-import '../style/Media.scss';
 import Blog from "../components/Projects/Blog";
+import Skills from "../components/Skills";
+import Spotify from "../components/Spotify";
+import Twitter from "../components/Twitter";
+import '../style/Media.scss';
 
 export const MediaLinks = () => {
     const [loading, setLoading] = useState(true);

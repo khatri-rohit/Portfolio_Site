@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 import { BounceLoader } from 'react-spinners';
-import Profile from '../components/Profile';
 import DisplayMap from '../components/DIsplayMap';
-// import ImageSlider from '../components/ImageSlider';
-import StaticPlayer from '../components/StaticPlayer';
-import Skills from '../components/Skills';
-import LinkedIn from "../components/LinkedIn";
+import Profile from '../components/Profile';
 import Github from '../components/Github';
-import Twitter from '../components/Twitter';
 import Instagram from '../components/Instagram';
-import '../style/All.scss';
+import LinkedIn from "../components/LinkedIn";
 import Blog from '../components/Projects/Blog';
+import Skills from '../components/Skills';
+import StaticPlayer from '../components/StaticPlayer';
+import Twitter from '../components/Twitter';
+import '../style/All.scss';
 
 
 const Home = () => {
@@ -36,37 +35,35 @@ const Home = () => {
   }
 
   return (
-    <>
-      <div className="layout container mx-auto">
-        <div className="box box1">
-          <Profile />
-        </div>
-        <div className="box box2">
-          <DisplayMap />
-        </div>
-        <div className="box probox border-4">
-          <Blog />
-        </div>
-        <div className="box box3">
-          <StaticPlayer />
-        </div>
-        <div className="box box4">
-          <Skills />
-        </div>
-        <div className="box box3">
-          <Github />
-        </div>
-        <div className="box box3">
-          <LinkedIn />
-        </div>
-        <div className="box box2">
-          <Twitter />
-        </div>
-        <div className="box insta">
-          <Instagram />
-        </div>
+    <div className="layout md:container mx-auto">
+      <div className="box box1">
+        <Profile />
       </div>
-    </>
+      <div className="box box2">
+        <DisplayMap />
+      </div>
+      <div className="box probox border-4">
+        <Blog />
+      </div>
+      <div className="box box3">
+        <StaticPlayer />
+      </div>
+      <div className="box box4">
+        <Skills />
+      </div>
+      <div className="box box3">
+        <Github />
+      </div>
+      <div className="box box3">
+        <LinkedIn />
+      </div>
+      <div className="box box2">
+        <Twitter />
+      </div>
+      <div className="box insta">
+        <Instagram />
+      </div>
+    </div>
   )
 };
 

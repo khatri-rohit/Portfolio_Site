@@ -90,13 +90,47 @@ $font-stack: "Quicksand", sans-serif;
     }
 }
 
+@media (max-width: 1024px) {
+        .layout {
+            padding: 0em;
+            gap: 1em;
+
+            .box{
+                margin: 0.5em 0;
+            }
+            
+            .box1{
+                .name{
+                    font-size: 2.1em;
+                    animation: 
+                    typing 3s steps(40, end),
+                    blink-caret .75s step-end infinite;
+                    transition: all .45s ease-in-out;
+                    letter-spacing: normal;
+                }
+                .name:hover{
+                    font-size: 2.5em;
+                }
+                @keyframes typing {
+                    from { width: 0; }
+                    to { width: 100%; }
+                }
+                @keyframes blink-caret {
+                    from, to { border-color: transparent }
+                    50% { border-color: #000000; }
+                }
+                
+            }
+        }
+    }
+
 @media (max-width: 768px) {
         .layout {
             display: block;
             padding: 2em;
             
             .box{
-                margin: 1em 0;
+                margin: 1.8em 0;
             }
             .box1{
                 .name{
@@ -107,6 +141,9 @@ $font-stack: "Quicksand", sans-serif;
                     transition: all .45s ease-in-out;
                     letter-spacing: normal;
                 }
+                .name:hover{
+                    font-size: 2.5em;
+                }
                 @keyframes typing {
                     from { width: 0; }
                     to { width: 100%; }
@@ -115,9 +152,7 @@ $font-stack: "Quicksand", sans-serif;
                     from, to { border-color: transparent }
                     50% { border-color: #000000; }
                 }
-                .name:hover{
-                    font-size: 3.3em;
-                }
+                
             }
         }
     }

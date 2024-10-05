@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { BounceLoader } from 'react-spinners';
 import DisplayMap from "../components/DIsplayMap";
+import Github from '../components/Github';
+import Instagram from '../components/Instagram';
+import LinkedIn from '../components/LinkedIn';
 import Profile from "../components/Profile";
+import Blog from '../components/Projects/Blog';
 import Skills from "../components/Skills";
 import StaticPlayer from "../components/StaticPlayer";
-import Github from '../components/Github';
-import LinkedIn from '../components/LinkedIn';
 import Twitter from '../components/Twitter';
-import Instagram from '../components/Instagram';
-import Blog from '../components/Projects/Blog';
 
 const About = () => {
   const [loading, setLoading] = useState(true);
