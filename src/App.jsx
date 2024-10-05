@@ -1,18 +1,18 @@
+import { useEffect, useState } from 'react';
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider
 } from 'react-router-dom';
-import All from './pages/All.jsx';
-import About from './pages/About.jsx';
-import Projects from './pages/Projects.jsx';
-import { Layout } from './layout/Layout.jsx';
-import { MediaLinks } from './pages/MediaLinks.jsx';
-import { ThemeProvider } from './context/theme.js';
-import { useEffect, useState } from 'react';
-import Redirect from './pages/Redirect.jsx';
 import './App.css';
+import { ThemeProvider } from './context/theme.js';
+import { Layout } from './layout/Layout.jsx';
+import About from './pages/About.jsx';
+import All from './pages/All.jsx';
+import { MediaLinks } from './pages/MediaLinks.jsx';
+import Projects from './pages/Projects.jsx';
+import Redirect from './pages/Redirect.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
