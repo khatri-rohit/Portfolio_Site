@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BounceLoader } from 'react-spinners';
 import DisplayMap from "../components/DIsplayMap";
-import ImageSlider from "../components/ImageSlider";
 import Profile from "../components/Profile";
 import Skills from "../components/Skills";
 import StaticPlayer from "../components/StaticPlayer";
@@ -9,6 +8,7 @@ import Github from '../components/Github';
 import LinkedIn from '../components/LinkedIn';
 import Twitter from '../components/Twitter';
 import Instagram from '../components/Instagram';
+import Blog from '../components/Projects/Blog';
 
 const About = () => {
   const [loading, setLoading] = useState(true);
@@ -40,8 +40,8 @@ const About = () => {
         <div className="box box2 rounded-3xl shadow-xl h-fit">
           <DisplayMap />
         </div>
-        <div className="box box3 rounded-3xl shadow-xl h-fit">
-          <ImageSlider />
+        <div className="box probox border-4">
+          <Blog/>
         </div>
         <div className="box box3 rounded-3xl shadow-xl h-fit">
           <StaticPlayer />

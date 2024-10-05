@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BounceLoader } from "react-spinners";
 import Github from "../components/Github";
-import ImageSlider from "../components/ImageSlider";
+// import ImageSlider from "../components/ImageSlider";
 import Twitter from "../components/Twitter";
 import Spotify from "../components/Spotify";
 import Instagram from "../components/Instagram";
@@ -10,6 +10,7 @@ import Profile from "../components/Profile";
 import DisplayMap from "../components/DIsplayMap";
 import Skills from "../components/Skills";
 import '../style/Media.scss';
+import Blog from "../components/Projects/Blog";
 
 export const MediaLinks = () => {
     const [loading, setLoading] = useState(true);
@@ -37,9 +38,6 @@ export const MediaLinks = () => {
                 <div className="box twitter">
                     <Twitter />
                 </div>
-                <div className="box img">
-                    <ImageSlider />
-                </div>
                 <div className="box linkedIn">
                     <LinkedIn />
                 </div>
@@ -53,13 +51,16 @@ export const MediaLinks = () => {
                     <Instagram />
                 </div>
                 <div className="box box1 opacity-20">
-                    <Profile/>
+                    <Profile />
                 </div>
                 <div className="box box2 opacity-20">
                     <DisplayMap />
                 </div>
                 <div className="box box4 opacity-20">
                     <Skills />
+                </div>
+                <div className="box probox opacity-20">
+                    <Blog />
                 </div>
             </div>
         </>

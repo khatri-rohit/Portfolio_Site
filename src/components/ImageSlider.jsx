@@ -46,12 +46,14 @@ const ImageSlider = () => {
                             className="text-white text-2xl" />
                     </button>
                 </div>
+{/*                 
                 <div
                     className="z-10 flex justify-around items-center absolute bottom-1 left-[29%]">
                     <p className={`${count == 1 ? "bg-white" : "bg-slate-400"} h-3 w-3 rounded-full  mx-8 my-2 opacity-80`}></p>
                     <p className={`${count == 2 ? "bg-white" : "bg-slate-400"} h-3 w-3 rounded-full  mx-8 my-2 opacity-80`}></p>
                     {/* <p className={`${count == 3 ? " mx-5 my-2 bg-white" : " mx-5 my-2 bg-slate-400"} h-3 w-3 rounded-full`}></p> */}
-                </div>
+                {/* </div> */}
+
             </div>
         </>
     )

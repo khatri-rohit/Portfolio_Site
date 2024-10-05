@@ -9,12 +9,18 @@ $font-stack: "Quicksand", sans-serif;
     padding: 5em;
     transition: all .45s ease-in-out;
 
+    
     .box{
-        transition: all .45s ease-in-out;
+        border-radius: 1.25rem;
+        height: fit-content;
+        transition: all .20s ease-in-out;
+        border: none;
     }
+
     .box:hover{
         margin-top: -1em;
     }
+    
     .twitter{
         grid-column: span 2;
     }

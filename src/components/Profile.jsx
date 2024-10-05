@@ -15,7 +15,7 @@ const Profile = () => {
                     Hey👋🏻 I'm <span className="border-slate-400 hover:border-b-2 font-semibold">Rohit Khatri</span> from Ajmer. My Goal is to work in a company where I can deliver business value while also leveling up my skills as a developer.
                 </p>
                 <div className="p-2 rounded-full background-color drop-shadow-lg my-4 w-fit">
-                    <a className="bg-white dark:bg-slate-500 px-3 py-1 rounded-full w-full h-full dark:text-white"
+                    <a className="bg-white dark:bg-gray-800 px-3 py-1 rounded-full w-full h-full dark:text-white"
                         href="mailto:rohitkhatri.dev@gmail.com">
                         Contact
                     </a>

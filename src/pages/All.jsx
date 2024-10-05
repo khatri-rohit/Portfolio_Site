@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { BounceLoader } from 'react-spinners';
 import Profile from '../components/Profile';
 import DisplayMap from '../components/DIsplayMap';
-import ImageSlider from '../components/ImageSlider';
+// import ImageSlider from '../components/ImageSlider';
 import StaticPlayer from '../components/StaticPlayer';
 import Skills from '../components/Skills';
 import LinkedIn from "../components/LinkedIn";
@@ -10,9 +10,10 @@ import Github from '../components/Github';
 import Twitter from '../components/Twitter';
 import Instagram from '../components/Instagram';
 import '../style/All.scss';
+import Blog from '../components/Projects/Blog';
 
 
-const All = () => {
+const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -43,8 +44,8 @@ const All = () => {
         <div className="box box2">
           <DisplayMap />
         </div>
-        <div className="box box3">
-          <ImageSlider />
+        <div className="box probox border-4">
+          <Blog />
         </div>
         <div className="box box3">
           <StaticPlayer />
@@ -69,4 +70,4 @@ const All = () => {
   )
 };
 
-export default All;
+export default Home;

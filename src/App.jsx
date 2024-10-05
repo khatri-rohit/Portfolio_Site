@@ -9,17 +9,19 @@ import './App.css';
 import { ThemeProvider } from './context/theme.js';
 import { Layout } from './layout/Layout.jsx';
 import About from './pages/About.jsx';
-import All from './pages/All.jsx';
+import Home from './pages/All.jsx';
 import { MediaLinks } from './pages/MediaLinks.jsx';
 import Projects from './pages/Projects.jsx';
 import Redirect from './pages/Redirect.jsx';
+import { Discussdev } from './pages/Discussdev.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-      <Route path='' element={<All />} />
+      <Route path='' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/projects' element={<Projects />} />
+      <Route path='/project/blog' element={<Discussdev />} />
       <Route path='/media' element={<MediaLinks />} />
       <Route path='/*' element={<Redirect />} />
     </Route>

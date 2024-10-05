@@ -15,6 +15,7 @@ $font-stack: "Quicksand", sans-serif;
         border-radius: 1.25rem;
         height: fit-content;
         transition: all .20s ease-in-out;
+        border: none;
     }
 
     .box:hover{
@@ -41,7 +42,7 @@ $font-stack: "Quicksand", sans-serif;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 overflow: hidden; /* Ensures the content is not revealed until the animation */
-                border-right: .019em solid #000000; /* The typwriter cursor */
+                border-right: .019em solid #ffffff; /* The typwriter cursor */
                 white-space: nowrap; /* Keeps the content on a single line */
                 letter-spacing: .4rem;
                 animation: 
@@ -71,6 +72,12 @@ $font-stack: "Quicksand", sans-serif;
         padding: 0;
         grid-column: span 2;
     }
+    .probox{
+        padding: 0;
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
     .box3{
         grid-column: span 1;
     }
