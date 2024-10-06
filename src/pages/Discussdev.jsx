@@ -5,7 +5,7 @@ export const Discussdev = () => {
             <p className="text-5xl font-bold dark:text-white">DiscussDev</p>
             <p className="text-2xl font-medium my-5 dark:text-white">Tech Blog Site</p>
             <div className="w-[70%] mb-5 flex flex-col items-center">
-                <img src="/img/project/blog.png" className="rounded-3xl drop-shadow-lg dark:text-white shadow-lg h-[35em]" />
+                <img src="/img/project/blog.png" className="rounded-3xl drop-shadow-lg dark:text-white lg:shadow-lg h-[35em] object-cover" />
             </div>
 
             <div className="mt-12">
@@ -22,7 +22,7 @@ export const Discussdev = () => {
                     <img src="/img/skills/vercel.png" className="w-16 mx-1 bg-white h-11 px-1" />
                 </div>
             </div>
-            <div className="w-[50%] mt-14 dark:text-white flex flex-col items-start">
+            <div className="md:w-[50%] w-[80%] mt-14 dark:text-white flex flex-col items-start">
                 <p className="text-xl mb-2 font-light">
                     <strong>DevDiscuss</strong> is a fully responsive blog platform where users can create, read, and interact with blogs. Built with <strong>React</strong> and styled using <strong>Tailwind CSS</strong>, this site offers a smooth and modern user experience. The platform leverages <strong>Supabase</strong> for authentication, user management, and database storage, ensuring secure and efficient handling of user data.
                 </p>

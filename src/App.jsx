@@ -10,10 +10,10 @@ import { ThemeProvider } from './context/theme.js';
 import { Layout } from './layout/Layout.jsx';
 import About from './pages/About.jsx';
 import Home from './pages/All.jsx';
+import { Discussdev } from './pages/Discussdev.jsx';
 import { MediaLinks } from './pages/MediaLinks.jsx';
 import Projects from './pages/Projects.jsx';
 import Redirect from './pages/Redirect.jsx';
-import { Discussdev } from './pages/Discussdev.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
