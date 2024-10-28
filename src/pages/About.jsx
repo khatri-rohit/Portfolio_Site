@@ -34,6 +34,7 @@ const About = () => {
 
   return (
     <div className="layout lg:w-[80%] w-full mx-auto lg:p-[4em] md:p-[1.5em] p-[1em]">
+      
       <div className="box box1">
         <Profile />
       </div>
@@ -50,30 +51,30 @@ const About = () => {
         <Skills />
       </div>
 
-      <div className="box box3 rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+      <div className="box box3 rounded-3xl shadow-xl md:opacity-20 opacity-50 md:block hidden h-full">
         <Github />
       </div>
-      <div className="box box3 rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+      <div className="box box3 rounded-3xl shadow-xl md:opacity-20 opacity-50 md:block hidden h-full">
         <LinkedIn />
       </div>
-      <div className="box box2 rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+      <div className="box box2 rounded-3xl shadow-xl md:opacity-20 opacity-50 md:block hidden h-full">
         <Twitter />
       </div>
-      <div className="box insta rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+      <div className="box insta rounded-3xl shadow-xl md:opacity-20 opacity-50 md:block hidden h-full">
         <Instagram />
       </div>
 
       <div className="col-4 social">
-        <div className="box box3 rounded-3xl shadow-xl opacity-20 github">
+        <div className="box box3 rounded-3xl shadow-xl md:opacity-20 opacity-50 github">
           <Github />
         </div>
-        <div className="box box3 rounded-3xl shadow-xl opacity-20 linkedIn">
+        <div className="box box3 rounded-3xl shadow-xl md:opacity-20 opacity-50 linkedIn">
           <LinkedIn />
         </div>
-        <div className="box box2 rounded-3xl shadow-xl opacity-20 twitter">
+        <div className="box box2 rounded-3xl shadow-xl md:opacity-20 opacity-50 twitter">
           <Twitter />
         </div>
-        <div className="box insta rounded-3xl shadow-xl opacity-20">
+        <div className="box insta rounded-3xl shadow-xl md:opacity-20 opacity-50">
           <Instagram />
         </div>
       </div>

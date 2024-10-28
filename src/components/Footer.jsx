@@ -1,9 +1,19 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 export const Footer = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 250)
+    })
+
     return (
+        !loading &&
         <footer>
             <div className="border-t-2 container mx-auto dark:border-white border-black flex justify-between px-5 items-center duration-300">
                 <p className="md:text-lg text-xs font-light dark:text-white my-3 duration-300">

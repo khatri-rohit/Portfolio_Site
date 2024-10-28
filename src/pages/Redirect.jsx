@@ -7,7 +7,7 @@ const Redirect = () => {
         navigate("/");
     }
     return (
-        <div className="p-15 flex flex-col items-center justify-center">
+        <div className="p-15 flex flex-col items-center justify-center h-screen">
             <p className="dark:text-white text-center text-5xl m-3">Page doesn't exists </p>
             <button className="px-4 py-2 bg-[#0c34b9] my-6 text-white text-2xl rounded-lg"
                 onClick={redirect}>

@@ -4,6 +4,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/*  */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -22,26 +23,17 @@ body {
   animation: scroll 20s linear infinite;
 }
 
+.scroller[data-animated="true"]:hover .scroller__inner {
+  animation-play-state: paused;
+}
+
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - .595em));
   }
 }
 
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
+/*  */
 
 .animate-gradientMove {
   animation: gradientMove 2s linear infinite;
@@ -49,7 +41,7 @@ body {
   border-radius: 50%;
 }
 
-@keyframes gradientMoveSecond {
+@keyframes gradientMove {
   0% {
     background-position: 0% 50%;
   }
@@ -66,4 +58,18 @@ body {
 .animate-gradient {
   animation: gradientMoveSecond 2s ease-in-out infinite;
   background-size: 200% 200%;
+}
+
+@keyframes gradientMoveSecond {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

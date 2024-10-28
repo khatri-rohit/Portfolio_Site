@@ -5,7 +5,7 @@ const Blog = () => {
         <div className="p-3 bg-white dark:bg-[#222831] rounded-3xl drop-shadow-lg  duration-300 h-full lg:block flex flex-col justify-around">
             <div className="p-3.5">
                 <p className="uppercase dark:text-slate-300 text-gray-700 font-bold opacity-80">project</p>
-                <p className="font-medium text-xl dark:text-gray-300 my-2">DiscussDev</p>
+                <p className="font-medium text-xl dark:text-gray-300 my-2">DevDiscuss</p>
                 <div>
                     <p className="text-xs uppercase font-bold text-[#5b5d5e] dark:text-[#B3C8CF] mb-1" style={{ letterSpacing: "1.5px" }}>
                         built with

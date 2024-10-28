@@ -58,28 +58,28 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="box box2 opacity-20 map">
+      <div className="box box2 md:opacity-20 opacity-50 map">
         <DisplayMap />
       </div>
-      <div className="box spotify box2 opacity-20  h-full">
+      <div className="box spotify box2 md:opacity-20 opacity-50  h-full">
         <Spotify />
       </div>
-      <div className="box box2 opacity-20 skill h-full">
+      <div className="box box2 md:opacity-20 opacity-50 skill h-full">
         <Skills />
       </div>
 
-      <div className="box opacity-20 h-full md:block hidden">
+      <div className="box md:opacity-20 opacity-50 h-full md:block hidden">
         <Twitter />
       </div>
-      <div className="box insta opacity-20 block h-full md:block hidden">
+      <div className="box insta md:opacity-20 opacity-50 h-full md:block hidden">
         <Instagram />
       </div>
 
       <div className="project-grid">
-        <div className="box opacity-20 h-full">
+        <div className="box md:opacity-20 opacity-50 h-full">
           <Twitter />
         </div>
-        <div className="box insta opacity-20 block  h-full">
+        <div className="box insta md:opacity-20 opacity-50 block  h-full">
           <Instagram />
         </div>
       </div>

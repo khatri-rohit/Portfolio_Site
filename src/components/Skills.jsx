@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { IoMdArrowDropup } from "react-icons/io";
-import '../style/skill.css';
+// import '../style/skill.css';
 
 const Skills = () => {
 
@@ -43,11 +43,11 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="bg-white dark:bg-[#222831] rounded-3xl p-2 scroller w-full drop-shadow-2xl relative h-full duration-300">
-            <p className="text-2xl text-center font-bold mb-2 underline dark dark:text-indigo-300">
+        <div className="scroller bg-white dark:bg-[#222831] rounded-3xl p-2 w-full drop-shadow-2xl relative h-full duration-300">
+            <p className="text-2xl text-center font-bold mb-2 dark dark:text-indigo-300">
                 Skills
             </p>
-            <div className="skills p-2 scroller__inner">
+            <div className="skills scroller__inner  p-2 ">
                 {
                     skills.map((skill, _) => (
                         <div className="skill mx-4" key={_}>
