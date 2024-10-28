@@ -35,7 +35,7 @@ const Home = () => {
   }
 
   return (
-    <div className="layout lg:w-[80%] w-full mx-auto lg:p-[4em] md:p-[1.5em] p-[1em]">
+    <div className="layout lg:w-[80%] w-full mx-auto lg:p-[3.54em] md:p-[1.5em] p-[1em]">
       <div className="box box1 profile w-/">
         <Profile />
       </div>

@@ -13,11 +13,6 @@
     border: none;
 }
 
-.font-change {
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
 .name {
     font-size: 4em;
     color: #2E3192;
@@ -34,6 +29,7 @@
         blink-caret .75s step-end infinite;
     transition: all .45s ease-in-out;
 }
+
 
 .name:hover {
     font-size: 4.5em;
@@ -103,19 +99,17 @@
     }
 }
 
-@media screen and (min-width: 1026px) and (max-width: 1300px) {
+@media (max-width:1024px) {
+    .layout {
+        gap: 1em;
+    }
+
     .name {
         font-size: 3em;
     }
 
     .name:hover {
-        font-size: 3.4em;
-    }
-}
-
-@media (max-width:1024px) {
-    .layout {
-        gap: 1em;
+        font-size: 3.5em;
     }
 
     .profile {
@@ -143,9 +137,6 @@
         background: linear-gradient(45deg, #405De6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
     }
 
-    .name {
-        font-size: 2em;
-    }
 }
 
 @media (max-width:768px) {
@@ -154,12 +145,15 @@
     }
 
     .name {
-        font-size: 2em;
-        letter-spacing: 0;
+        font-size: 2.8em;
         animation:
             typing 2s steps(50, end),
             blink-caret .75s step-end infinite;
         transition: all .45s ease-in-out;
+    }
+
+    .name:hover {
+        font-size: 3.2em;
     }
 
     .col-4 {
@@ -199,6 +193,28 @@
 
     .project-grid>.insta {
         grid-column: span 1;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 75%;
+        }
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: #000000;
+        }
     }
 
 }
