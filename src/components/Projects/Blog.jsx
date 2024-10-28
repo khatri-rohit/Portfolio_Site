@@ -11,10 +11,10 @@ const Blog = () => {
                         built with
                     </p>
                     <div className="images flex items-center">
-                        <img src="/img/skills/react.png" className="w-10 me-1" />
-                        <img src="/img/skills/js.png" className="w-10 mx-1" />
-                        <img src="/img/skills/tailwind.png" className="w-10 mx-1" />
-                        <img src="/img/skills/supabase.jpg" className="w-10 mx-1" />
+                        <img src="/img/skills/react.png" className="md:w-8 lg:w-10 w-[1.5em] me-3 md:me-1.5" />
+                        <img src="/img/skills/js.png" className="md:w-8 lg:w-10 w-[1.5em] mx-3 md:mx-1.5" />
+                        <img src="/img/skills/tailwind.png" className="md:w-8 lg:w-10 w-[1.5em] mx-3 md:mx-1.5" />
+                        <img src="/img/skills/supabase.jpg" className="md:w-8 lg:w-10 w-[1.5em] mx-3 md:mx-1.5" />
                     </div>
                 </div>
             </div>
