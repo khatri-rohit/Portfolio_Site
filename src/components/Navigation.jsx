@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import useTheme from '../context/theme';
-import '../style/Nav.css';
 
 const Navigation = () => {
 
@@ -25,7 +24,7 @@ const Navigation = () => {
                         />
                         <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full dark:bg-white bg-slate-700">
                             <span
-                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary dark:text-yellow-300 text-white"
+                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-yellow-500 dark:text-slate-400"
                             >
                                 <svg
                                     width='16'
@@ -50,7 +49,7 @@ const Navigation = () => {
                                 </svg>
                             </span>
                             <span
-                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-gray-500 text-body-color"
+                                className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary dark:text-yellow-300 text-slate-400 text-body-color"
                             >
                                 <svg
                                     width='16'
@@ -92,10 +91,10 @@ const Navigation = () => {
                     </nav>
                 </div>
                 {/* Contact */}
-                <div className="hidden btn md:block p-1.5 rounded-full background-color drop-shadow-lg z-10">
-                    <a className="bg-white dark:bg-gray-800 px-3 py-1 rounded-full w-full h-full dark:text-white"
+                <div className="hidden btn md:block py-[0.4em] px-[0.3em] rounded-full bg-gradient-to-r from-[#ff00cc] via-[#333399] to-[#00ffcc] animate-gradientMove drop-shadow-lg z-10">
+                    <a className="bg-white dark:bg-gray-800 px-3 py-1 rounded-full w-full h-full dark:text-white font-normal" style={{ letterSpacing: "1.52px" }}
                         href="mailto:rohitkhatri.dev@gmail.com">
-                        Contact
+                        Connect
                     </a>
                 </div>
             </div>
@@ -112,7 +111,7 @@ const Navigation = () => {
                     />
                     <div className="shadow-card flex h-[40px] w-[82px] items-center justify-center rounded-full dark:bg-white bg-slate-700">
                         <span
-                            className="flex h-9 w-9 items-center justify-center rounded dark:text-yellow-300 text-white"
+                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-yellow-500 dark:text-slate-400"
                         >
                             <svg
                                 width='16'
@@ -137,7 +136,7 @@ const Navigation = () => {
                             </svg>
                         </span>
                         <span
-                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary text-gray-500 text-body-color"
+                            className="flex h-9 w-9 items-center justify-center rounded dark:bg-primary dark:text-yellow-300 text-slate-400 text-body-color"
                         >
                             <svg
                                 width='16'

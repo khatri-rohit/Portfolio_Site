@@ -43,7 +43,7 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="bg-white dark:bg-[#222831] rounded-3xl p-2 scroller w-full drop-shadow-2xl relative">
+        <div className="bg-white dark:bg-[#222831] rounded-3xl p-2 scroller w-full drop-shadow-2xl relative h-full duration-300">
             <p className="text-2xl text-center font-bold mb-2 underline dark dark:text-indigo-300">
                 Skills
             </p>

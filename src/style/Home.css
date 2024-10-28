@@ -1,0 +1,204 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(200px, auto);
+    transition: all .45s ease-in-out;
+}
+
+.box {
+    border-radius: 1.25rem;
+    height: 100%;
+    transition: all .10s ease-in-out;
+    border: none;
+}
+
+.font-change {
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.name {
+    font-size: 4em;
+    color: #2E3192;
+    background-image: -webkit-linear-gradient(0deg, #3338b8 20%, #25c1fa 68%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    border-right: .025em solid white;
+    white-space: nowrap;
+    letter-spacing: .3rem;
+    animation:
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+    transition: all .45s ease-in-out;
+}
+
+.name:hover {
+    font-size: 4.5em;
+}
+
+.profile {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.map {
+    grid-column: span 2 !important;
+}
+
+.blog {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.player {
+    grid-column: span 1;
+}
+
+.skill {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.github,
+.linkedIn {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.insta {
+    grid-column: span 1;
+    background: linear-gradient(45deg, #405De6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.col-4 {
+    display: none;
+}
+
+.project-grid {
+    display: none;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #000000;
+    }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1300px) {
+    .name {
+        font-size: 3em;
+    }
+
+    .name:hover {
+        font-size: 3.4em;
+    }
+}
+
+@media (max-width:1024px) {
+    .layout {
+        gap: 1em;
+    }
+
+    .profile {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .blog {
+        grid-column: span 2;
+        grid-row: span 2;
+        padding: 0;
+    }
+
+    .player {
+        grid-column: span 1;
+    }
+
+    .skill {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .insta {
+        grid-column: span 2;
+        background: linear-gradient(45deg, #405De6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    }
+
+    .name {
+        font-size: 2em;
+    }
+}
+
+@media (max-width:768px) {
+    .layout {
+        display: block;
+    }
+
+    .name {
+        font-size: 2em;
+        letter-spacing: 0;
+        animation:
+            typing 2s steps(50, end),
+            blink-caret .75s step-end infinite;
+        transition: all .45s ease-in-out;
+    }
+
+    .col-4 {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1em;
+        margin: 1em 0;
+        align-items: center;
+    }
+
+    .col-4>.twitter,
+    .col-4>.insta,
+    .col-4>.github,
+    .col-4>.linkedIn {
+        grid-column: span 1;
+        height: 90%;
+    }
+
+    .col-4>.github>a>img {
+        padding: 1em;
+    }
+
+    .project-grid {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(2, 2fr);
+        margin: 1em .5em;
+    }
+
+    .project-grid {
+        margin-bottom: 2.5em;
+    }
+
+    .project-grid>.github>a>img {
+        padding: 1em;
+    }
+
+    .project-grid>.insta {
+        grid-column: span 1;
+    }
+
+}

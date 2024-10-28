@@ -1,25 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 // Variables
-$font-stack: "Quicksand", sans-serif;
 
 .layout{
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(4, 2fr);
     grid-auto-rows: minmax(200px,auto);
-    padding: 5em;
     transition: all .45s ease-in-out;
 
     .box{
         border-radius: 1.25rem;
-        height: fit-content;
-        transition: all .20s ease-in-out;
+        height: 100%;
+        transition: all .10s ease-in-out;
         border: none;
-    }
-
-    .box:hover{
-        margin-top: -1em;
     }
     
     .box1{
@@ -29,9 +22,7 @@ $font-stack: "Quicksand", sans-serif;
         .aboutme{
 
             .font-change{
-                font-family: $font-stack;
                 font-optical-sizing: auto;
-                font-weight: 500;
                 font-style: normal;
             }
 
@@ -42,12 +33,12 @@ $font-stack: "Quicksand", sans-serif;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 overflow: hidden; /* Ensures the content is not revealed until the animation */
-                border-right: .019em solid #ffffff; /* The typwriter cursor */
+                border-right: .025em solid white; /* The typwriter cursor */
                 white-space: nowrap; /* Keeps the content on a single line */
-                letter-spacing: .4rem;
+                letter-spacing: .3rem;
                 animation: 
                     typing 3s steps(40, end),
-                    blink-caret .75s step-end infinite;
+                    blink-caret .75s step-end infinite ;
                 transition: all .45s ease-in-out;
             }
 
@@ -60,12 +51,7 @@ $font-stack: "Quicksand", sans-serif;
                 from, to { border-color: transparent }
                 50% { border-color: #000000; }
             }
-            .name:hover{
-                font-size: 5.2em;
-            }
-            .background-color{
-                background-image: -webkit-linear-gradient(0deg, #3338b8 20%, #25c1fa 68%);
-            }
+
         }
     }
     .box2{
@@ -90,69 +76,70 @@ $font-stack: "Quicksand", sans-serif;
     }
 }
 
-@media (max-width: 1024px) {
-        .layout {
-            padding: 0em;
-            gap: 1em;
+// @media (max-width: 1024px) {
+//         .layout {
+//             padding: 1em;
+//             gap: 1em;
 
-            .box{
-                margin: 0.5em 0;
-            }
+//             .box{
+//                 margin: 0.5em 0;
+//             }
             
-            .box1{
-                .name{
-                    font-size: 2.1em;
-                    animation: 
-                    typing 3s steps(40, end),
-                    blink-caret .75s step-end infinite;
-                    transition: all .45s ease-in-out;
-                    letter-spacing: normal;
-                }
-                .name:hover{
-                    font-size: 2.5em;
-                }
-                @keyframes typing {
-                    from { width: 0; }
-                    to { width: 100%; }
-                }
-                @keyframes blink-caret {
-                    from, to { border-color: transparent }
-                    50% { border-color: #000000; }
-                }
+//             .box1{
+//                 .name{
+//                     margin: .2em 0;
+//                     font-size: 2.7em;
+//                     animation: 
+//                     typing 3s steps(40, end),
+//                     blink-caret .75s step-end infinite;
+//                     transition: all .45s ease-in-out;
+//                     letter-spacing: normal;
+//                 }
+//                 .name:hover{
+//                     font-size: 2em;
+//                 }
+//                 @keyframes typing {
+//                     from { width: 0; }
+//                     to { width: 100%; }
+//                 }
+//                 @keyframes blink-caret {
+//                     from, to { border-color: transparent }
+//                     50% { border-color: #000000; }
+//                 }
                 
-            }
-        }
-    }
+//             }
+//         }
+//     }
 
-@media (max-width: 768px) {
-        .layout {
-            display: block;
-            padding: 2em;
+// @media (max-width: 768px) {
+//         .layout {
+//             display: block;
+//             padding: 2em;
             
-            .box{
-                margin: 1.8em 0;
-            }
-            .box1{
-                .name{
-                    font-size: 2.5em;
-                    animation: 
-                    typing 3s steps(40, end),
-                    blink-caret .75s step-end infinite;
-                    transition: all .45s ease-in-out;
-                    letter-spacing: normal;
-                }
-                .name:hover{
-                    font-size: 2.5em;
-                }
-                @keyframes typing {
-                    from { width: 0; }
-                    to { width: 100%; }
-                }
-                @keyframes blink-caret {
-                    from, to { border-color: transparent }
-                    50% { border-color: #000000; }
-                }
+//             .box{
+//                 margin: 1.8em 0;
+//             }
+//             .box1{
+//                 .name{
+//                     font-size: 2.2em;
+//                     animation: 
+//                     typing 3s steps(40, end),
+//                     blink-caret .75s step-end infinite;
+//                     transition: all .45s ease-in-out;
+//                     letter-spacing: normal;
+//                 }
+//                 .name:hover{
+//                     font-size: 2.5em;
+//                 }
+//                 @keyframes typing {
+//                     from { width: 0; }
+//                     to { width: 100%; }
+//                 }
+//                 @keyframes blink-caret {
+//                     from, to { border-color: transparent }
+//                     50% { border-color: #000000; }
+//                 }
                 
-            }
-        }
-    }
+//             }
+//         }
+//     }

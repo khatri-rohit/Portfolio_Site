@@ -4,7 +4,7 @@ const Spotify = () => {
         <>
             <div className="h-full hidden md:flex items-center rounded-3xl bg-[#F5F7F8] dark:bg-[#222831] drop-shadow-lg">
                 <div className="w-[29em] img">
-                    <img src="/img/song_I_Do1.jpg"
+                    <img src="/img/song.jpg"
                         className="rounded-3xl p-5" />
                 </div>
                 <div className="h-[28vh] w-full">
@@ -25,10 +25,10 @@ const Spotify = () => {
                         </div>
                         <div className="song_details">
                             <p className="text-6xl font-bold dark:text-white">
-                                Like I Do
+                                Chaand
                             </p>
                             <p className="text-xl text-slate-700 dark:text-slate-300 font-medium">
-                                J.Tajor
+                                Brave World
                             </p>
                         </div>
                     </div>

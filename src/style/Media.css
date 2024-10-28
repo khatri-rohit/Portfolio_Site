@@ -1,0 +1,137 @@
+.mediaLayout {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: minmax(200px, auto);
+    padding: 5em;
+    transition: all .45s ease-in-out;
+
+}
+
+.box {
+    border-radius: 1.25rem;
+    height: fit-content;
+    transition: all .20s ease-in-out;
+    border: none;
+}
+
+.media-map {
+    grid-column: span 1;
+}
+
+.twitter {
+    grid-column: span 2;
+}
+
+.linkedIn {
+    grid-column: span 1;
+}
+
+.github {
+    grid-column: span 1;
+}
+
+.spotify {
+    grid-column: span 2;
+}
+
+.insta {
+    background: linear-gradient(45deg, #405De6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    border-radius: 1.5rem;
+}
+
+.box1 {
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+
+.font-change {
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.name {
+    color: #2E3192;
+    background-image: -webkit-linear-gradient(0deg, #3338b8 20%, #25c1fa 68%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .019em solid #000000;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    letter-spacing: .4rem;
+    animation:
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+    transition: all .45s ease-in-out;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #000000;
+    }
+}
+
+.name:hover {
+    font-size: 5.2em;
+}
+
+.box2 {
+    padding: 0;
+    grid-column: span 2;
+}
+
+.box3 {
+    grid-column: span 1;
+}
+
+.box4 {
+    grid-column: span 2;
+}
+
+@media (max-width:1024px) {
+
+    .box4,
+    .map {
+        grid-column: span 2 !important;
+    }
+
+    .media-probox {
+        grid-column: span 2 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .mediaLayout {
+        display: block;
+        padding: 2em;
+    }
+
+    .box {
+        margin: 1em 0;
+    }
+
+    .media-probox {
+        grid-column: span 2 !important;
+    }
+}

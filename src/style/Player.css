@@ -1,0 +1,61 @@
+.string {
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.string1 {
+  animation: string1 0.7s infinite;
+}
+
+.string2 {
+  animation: string2 0.7s infinite;
+}
+
+.string3 {
+  animation: string3 0.7s infinite;
+}
+
+@keyframes string1 {
+  0% {
+    height: 0.5em;
+  }
+  25% {
+    height: 0.7em;
+  }
+  50% {
+    height: 1em;
+  }
+  100% {
+    height: 0.5em;
+  }
+}
+
+@keyframes string2 {
+  0% {
+    height: 0.5em;
+  }
+  25% {
+    height: 1.2em;
+  }
+  50% {
+    height: 0.5em;
+  }
+  100% {
+    height: 0.5em;
+  }
+}
+
+@keyframes string3 {
+  0% {
+    height: 0.8em;
+  }
+  25% {
+    height: 1em;
+  }
+  50% {
+    height: 0.5em;
+  }
+  100% {
+    height: 0.5em;
+  }
+}

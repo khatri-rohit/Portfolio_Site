@@ -31,38 +31,54 @@ const About = () => {
       </div>
     )
   }
+
   return (
-    <>
-      <div className="layout container mx-auto">
-        <div className="box box1">
-          <Profile />
-        </div>
-        <div className="box box2 rounded-3xl shadow-xl h-fit">
-          <DisplayMap />
-        </div>
-        <div className="box probox border-4">
-          <Blog/>
-        </div>
-        <div className="box box3 rounded-3xl shadow-xl h-fit">
-          <StaticPlayer />
-        </div>
-        <div className="box box4 rounded-3xl shadow-xl h-fit">
-          <Skills />
-        </div>
-        <div className="box box3 rounded-3xl shadow-xl h-fit opacity-20">
+    <div className="layout lg:w-[80%] w-full mx-auto lg:p-[4em] md:p-[1.5em] p-[1em]">
+      <div className="box box1">
+        <Profile />
+      </div>
+      <div className="box box2 rounded-3xl shadow-xl map h-full">
+        <DisplayMap />
+      </div>
+      <div className="box probox blog h-full">
+        <Blog />
+      </div>
+      <div className="box box3 rounded-3xl shadow-xl player h-full">
+        <StaticPlayer />
+      </div>
+      <div className="box box4 rounded-3xl shadow-xl skill h-full">
+        <Skills />
+      </div>
+
+      <div className="box box3 rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+        <Github />
+      </div>
+      <div className="box box3 rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+        <LinkedIn />
+      </div>
+      <div className="box box2 rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+        <Twitter />
+      </div>
+      <div className="box insta rounded-3xl shadow-xl opacity-20 md:block hidden h-full">
+        <Instagram />
+      </div>
+
+      <div className="col-4 social">
+        <div className="box box3 rounded-3xl shadow-xl opacity-20 github">
           <Github />
         </div>
-        <div className="box box3 rounded-3xl shadow-xl h-fit opacity-20">
+        <div className="box box3 rounded-3xl shadow-xl opacity-20 linkedIn">
           <LinkedIn />
         </div>
-        <div className="box box2 rounded-3xl shadow-xl h-fit opacity-20">
+        <div className="box box2 rounded-3xl shadow-xl opacity-20 twitter">
           <Twitter />
         </div>
-        <div className="box insta rounded-3xl shadow-xl h-fit opacity-20">
+        <div className="box insta rounded-3xl shadow-xl opacity-20">
           <Instagram />
         </div>
       </div>
-    </>
+
+    </div>
   )
 };
 

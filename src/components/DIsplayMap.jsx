@@ -24,10 +24,7 @@ const DisplayMap = () => {
     }, [themeMode]);
 
     return (
-        <>
-            <div id="map" className="min-h-[29vh] rounded-3xl opacity-85">
-            </div>
-        </>
+        <div id="map" className="min-h-[29vh] rounded-3xl opacity-85 h-full"></div>
     )
 };
 

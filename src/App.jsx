@@ -29,7 +29,7 @@ const router = createBrowserRouter(
 )
 
 function App() {
-  const [themeMode, setThemeMode] = useState('system');
+  const [themeMode, setThemeMode] = useState('dark');
 
   const darkTheme = () => {
     setThemeMode('dark');
@@ -42,6 +42,13 @@ function App() {
   }
 
   useEffect(() => {
+    document.querySelector('html').classList.remove('dark', 'light');
+    document.querySelector('html').classList.add(themeMode);
+    if (themeMode === 'dark') document.body.style.backgroundColor = "#021526";
+    else document.body.style.backgroundColor = "#f7f7f7";
+  }, [themeMode])
+
+  useEffect(() => {
     const localTheme = localStorage.getItem("theme");
     if (localTheme === null) {
       const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -50,13 +57,6 @@ function App() {
       setThemeMode(localTheme);
     }
   }, []);
-
-  useEffect(() => {
-    document.querySelector('html').classList.remove('dark', 'light');
-    document.querySelector('html').classList.add(themeMode);
-    if (themeMode === 'dark') document.body.style.backgroundColor = "#021526";
-    else document.body.style.backgroundColor = "#f7f7f7";
-  }, [themeMode])
 
   return (
     <>
