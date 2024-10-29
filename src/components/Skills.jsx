@@ -5,11 +5,7 @@ import { IoMdArrowDropup } from "react-icons/io";
 const Skills = () => {
 
     const skills = [
-        { name: "Git", img: "/img/skills/git.png" },
-        { name: "Github", img: "/img/skills/github.png" },
-        { name: "HTML", img: "/img/skills/html.png" },
-        { name: "CSS", img: "/img/skills/css.png" },
-        { name: "Tailwind CSS", img: "/img/skills/tailwind.png", height: "80" },
+        { name: "Tailwind", img: "/img/skills/tailwind.png", height: "80" },
         { name: "Bootstrap", img: "/img/skills/bootstrap.png" },
         { name: "JS", img: "/img/skills/js.png" },
         { name: "React JS", img: "/img/skills/react.png" },
@@ -17,7 +13,11 @@ const Skills = () => {
         { name: "Supabase", img: "/img/skills/supabase.jpg" },
         { name: "Firebase", img: "/img/skills/firebase.png" },
         { name: "React Router", img: "https://ultimatecourses.com/assets/category/react-router-9c0bb349a7ca8d699e4dcd1ebcdd21dda7198447dfcef928f9cbb0748e1f0ad5.svg" },
-        { name: "React Toolkit", img: "/img/skills/redux.png" },
+        { name: "Git", img: "/img/skills/git.png" },
+        { name: "Github", img: "/img/skills/github.png" },
+        { name: "Redux", img: "/img/skills/redux.png" },
+        { name: "HTML", img: "/img/skills/html.png" },
+        { name: "CSS", img: "/img/skills/css.png" },
     ];
 
     useEffect(() => {
@@ -43,17 +43,17 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="scroller bg-white dark:bg-[#222831] rounded-3xl p-2 w-full drop-shadow-2xl relative h-full duration-300">
+        <div className="scroller bg-white dark:bg-[#222831] rounded-3xl p-2 w-full drop-shadow-2xl relative h-full duration-300 flex flex-col justify-around">
             <p className="text-2xl text-center font-bold mb-2 dark dark:text-indigo-300">
                 Skills
             </p>
-            <div className="skills scroller__inner  p-2 ">
+            <div className="skills scroller__inner p-2 ">
                 {
                     skills.map((skill, _) => (
-                        <div className="skill mx-4" key={_}>
+                        <div className="skill mx-4 flex flex-col items-center justify-evenly" key={_}>
                             <img src={skill.img}
-                                className={`max-w-28 ${skill?.height ? "h-[85px]" : "h-[100px]"}  `} />
-                            <p className="text-lg font-bold text-center mt-2 uppercase dark:text-white">
+                                className={`max-w-28 ${skill?.height ? "h-[80px]" : "h-[100px]"} my-3`} />
+                            <p className="text-[0.85em] md:text-[1.2em] font-bold text-center mt-2 uppercase dark:text-white">
                                 {skill.name}
                             </p>
                         </div>

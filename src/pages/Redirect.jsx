@@ -1,18 +1,23 @@
-/* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import useTheme from "../context/theme";
 
 const Redirect = () => {
     const navigate = useNavigate();
-    const redirect = () => {
-        navigate("/");
-    }
+    const { themeMode } = useTheme();
+
+    useEffect(() => {
+        setTimeout(() => {
+            navigate("/");
+        }, 2000);
+    }, [])
+
     return (
-        <div className="p-15 flex flex-col items-center justify-center h-screen">
-            <p className="dark:text-white text-center text-5xl m-3">Page doesn't exists </p>
-            <button className="px-4 py-2 bg-[#0c34b9] my-6 text-white text-2xl rounded-lg"
-                onClick={redirect}>
-                Home
-            </button>
+        <div className="p-10 flex flex-col items-center h-screen w-full">
+            <img src={`${themeMode === "dark" ? " /img/rb_7888.png" : "/img/rb_67437.png"}`} className="lg:w-[35%] md:w-[35%] " />
+            <p className="md:text-2xl dark:text-white">
+                You will Redirect to Home Page in a moment
+            </p>
         </div>
     )
 };

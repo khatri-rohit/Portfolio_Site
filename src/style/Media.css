@@ -2,17 +2,15 @@
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(4, 2fr);
-    grid-auto-rows: minmax(200px, auto);
+    /* grid-auto-rows: minmax(200px, auto); */
     padding: 5em;
     transition: all .45s ease-in-out;
-
 }
 
 .box {
     border-radius: 1.25rem;
     height: fit-content;
     transition: all .20s ease-in-out;
-    border: none;
 }
 
 .media-map {
