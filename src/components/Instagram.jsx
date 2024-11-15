@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const Instagram = () => {
     return (
         <a className="h-full flex items-center rounded-3xl drop-shadow-lg p-10 duration-300"
-            href="https://www.instagram.com/_.khatri_rohit._/"
+            href="https://www.instagram.com/rohitkhatri.dev"
             target="_blank">
             <img src="/img/instagram.png"
                 className="w-52 mx-auto" />
