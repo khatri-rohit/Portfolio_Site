@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import useTheme from '../context/theme';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const Navigation = () => {
 
@@ -11,9 +13,27 @@ const Navigation = () => {
         else darkTheme()
     }
 
+    const tl = gsap.timeline();
+
+    useGSAP(() => {
+        tl.from('.navigation div', {
+            stagger: 0.5,
+            y: -20,
+            opacity: 0,
+            duration: 0.5,
+        });
+
+        tl.from('.underdevelopment', {
+            y: -50,
+            opacity: 0,
+            duration: 0.2
+        });
+
+    })
+
     return (
         <>
-            <div className="border-b-2 border-black dark:border-white p-4 md:p-3 mx-auto flex justify-around items-center"> {/* md:mb-9 mb-5 */}
+            <div className="navigation border-b-2 border-black dark:border-white p-4 md:p-3 mx-auto flex justify-around items-center"> {/* md:mb-9 mb-5 */}
                 {/* Toogle Btn */}
                 <div className="checkbox-apple hidden md:block p-1 rounded-full drop-shadow-lg">
                     <label className='relative inline-flex cursor-pointer select-none items-center'>
@@ -98,7 +118,7 @@ const Navigation = () => {
                     </a>
                 </div>
             </div>
-            <p className="md:mb-7 mb-4 bg-yellow-200 text-center font-bold">
+            <p className="underdevelopment md:mb-7 mb-4 bg-yellow-200 text-center font-bold">
                 Under Development
             </p>
 

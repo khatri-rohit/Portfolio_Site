@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import { BounceLoader } from 'react-spinners';
 import DisplayMap from '../components/DIsplayMap';
 import Profile from '../components/Profile';
 import Github from '../components/Github';
@@ -10,33 +8,26 @@ import Skills from '../components/Skills';
 import StaticPlayer from '../components/StaticPlayer';
 import Twitter from '../components/Twitter';
 import '../style/Home.css';
+// import { useGSAP } from '@gsap/react';
+// import gsap from 'gsap';
 
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 250)
-  })
-
-  if (loading) {
-    return (
-      <div
-        className="absolute top-[50%] md:right-[50%] right-[40%] z-10">
-        <BounceLoader
-          color="#5B99C2"
-          size={71}
-          speedMultiplier={2}
-        />
-      </div>
-    )
-  }
+  // useGSAP(() => {
+  //   setTimeout(() => {
+  //     gsap.from('.box', {
+  //       opacity: 1,
+  //       y: 0,
+  //       delay: 0.1,
+  //       duration: 1,
+  //     })
+  //   }, 200);
+  // });
 
   return (
     <div className="layout lg:w-[80%] w-full mx-auto lg:p-[3.54em] md:p-[1.5em] p-[1em]">
-      <div className="box box1 profile w-/">
+      <div className="box box1 profile">
         <Profile />
       </div>
       <div className="box box2 media-map h-full">

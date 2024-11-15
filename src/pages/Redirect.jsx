@@ -9,7 +9,7 @@ const Redirect = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate("/");
-        }, 2000);
+        }, 5000);
     }, [])
 
     return (

@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import { BounceLoader } from 'react-spinners';
 import DisplayMap from "../components/DIsplayMap";
 import Github from '../components/Github';
 import Instagram from '../components/Instagram';
@@ -11,26 +9,7 @@ import StaticPlayer from "../components/StaticPlayer";
 import Twitter from '../components/Twitter';
 
 const About = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 250)
-  }, [])
-
-  if (loading) {
-    return (
-      <div
-        className="absolute top-[50%] md:right-[50%] right-[40%] z-10">
-        <BounceLoader
-          color="#5B99C2"
-          size={71}
-          speedMultiplier={2}
-        />
-      </div>
-    )
-  }
+  
 
   return (
     <div className="layout lg:w-[80%] w-full mx-auto lg:p-[4em] md:p-[1.5em] p-[1em]">

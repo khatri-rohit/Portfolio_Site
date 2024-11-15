@@ -1,5 +1,6 @@
 
 export const Discussdev = () => {
+   
     return (
         <div className="flex flex-col items-center mb-24">
             <p className="text-5xl font-bold dark:text-white">DiscussDev</p>
