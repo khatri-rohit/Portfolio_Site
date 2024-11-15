@@ -13,20 +13,12 @@ const Navigation = () => {
         else darkTheme()
     }
 
-    const tl = gsap.timeline();
-
     useGSAP(() => {
-        tl.from('.navigation div', {
+        gsap.from('.navigation div', {
             stagger: 0.5,
             y: -20,
             opacity: 0,
             duration: 0.5,
-        });
-
-        tl.from('.underdevelopment', {
-            y: -50,
-            opacity: 0,
-            duration: 0.2
         });
 
     })
@@ -118,9 +110,6 @@ const Navigation = () => {
                     </a>
                 </div>
             </div>
-            <p className="underdevelopment md:mb-7 mb-4 bg-yellow-200 text-center font-bold">
-                Under Development
-            </p>
 
             <div className="p-1 rounded-full z-10 drop-shadow-lg md:hidden fixed bottom-0 right-0 m-4">
                 <label className='relative inline-flex cursor-pointer select-none items-center'>
