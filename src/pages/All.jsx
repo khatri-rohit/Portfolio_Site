@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div className="layout lg:w-[80%] w-full mx-auto lg:p-[3.54em] md:p-[1.5em] p-[1em]">
-      <div className="box box1 profile">
+      <div className="box box1 profile h-full">
         <Profile />
       </div>
       <div className="box box2 media-map h-full">

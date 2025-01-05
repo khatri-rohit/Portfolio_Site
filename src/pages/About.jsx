@@ -14,7 +14,7 @@ const About = () => {
   return (
     <div className="layout lg:w-[80%] w-full mx-auto lg:p-[4em] md:p-[1.5em] p-[1em]">
       
-      <div className="box box1 rounded-3xl shadow-xl">
+      <div className="box box1 rounded-3xl shadow-xl h-full">
         <Profile />
       </div>
       <div className="box box2 rounded-3xl shadow-xl map h-full">

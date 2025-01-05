@@ -11,7 +11,7 @@ import Blog from "../components/Projects/Blog";
 
 export const MediaLinks = () => {
 
-    
+
     return (
         <div className="mediaLayout container mx-auto">
 

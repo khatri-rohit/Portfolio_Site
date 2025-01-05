@@ -13,8 +13,6 @@ body {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  /* -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 20%, transparent, white 10%, transparent); */
-  /* mask: linear-gradient(90deg, transparent, white 50%, white 50% transparent); */
 }
 
 .scroller[data-animated="true"] .scroller__inner {
