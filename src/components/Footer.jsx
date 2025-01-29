@@ -25,8 +25,8 @@ export const Footer = () => {
             },
             y: 0,
             opacity: 0,
-            duration: 1,
-            ease: "steps(3)"
+            duration: 0.5,
+            ease: "steps(1)"
         });
 
         gsap.from(".border-t-2", {
@@ -35,8 +35,8 @@ export const Footer = () => {
                 start: "top 98%",
             },
             width: 0,
-            duration: 1.5,
-            ease: "steps(3)"
+            duration: 1,
+            ease: "steps(1)"
         });
     }, []);
 
