@@ -9,7 +9,6 @@ import Twitter from "../components/Twitter";
 import Blog from "../components/Projects/Blog";
 import Hackerrank from "../components/Hackerrank";
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef, useEffect } from 'react';
 import '../style/Media.css';
 
@@ -25,7 +24,7 @@ export const MediaLinks = () => {
 
     const animate = (element, direction, delay = 0, label) => ({
         from: {
-            [direction.includes('x') ? 'x' : 'y']: direction.includes('-') ? '-100%' : '100%',
+            [direction.includes('x') ? 'x' : 'y']: direction.includes('-') ? '-50%' : '50%',
             opacity: 0
         },
         to: {
@@ -42,7 +41,7 @@ export const MediaLinks = () => {
 
         // Main components
         const mainAnimations = [
-            [twitterRef, '-x', 0.5],
+            [twitterRef, '-x', 0.3],
             [githubRef, 'x'],
             [linkedInRef, '-x'],
             [playerRef, '-x'],
@@ -82,10 +81,10 @@ export const MediaLinks = () => {
             <div className="box box4 md:opacity-20 opacity-50">
                 <Skills />
             </div>
-            <div className="box box1 md:opacity-20 opacity-50">
+            <div className="box box1 md:opacity-20 opacity-50 h-full">
                 <Profile />
             </div>
-            <div className="box media-probox md:opacity-20 opacity-50">
+            <div className="box media-probox md:opacity-20 opacity-50 h-full">
                 <Blog />
             </div>
         </div>
