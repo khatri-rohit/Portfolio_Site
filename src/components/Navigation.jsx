@@ -8,9 +8,9 @@ const Navigation = () => {
     const { darkTheme, lightTheme } = useTheme();
 
     const onChange = (e) => {
-        const darkModeStatus = e.currentTarget.checked
-        if (darkModeStatus) lightTheme()
-        else darkTheme()
+        const darkModeStatus = e.currentTarget.checked;
+        if (darkModeStatus) lightTheme();
+        else darkTheme();
     }
 
     useGSAP(() => {
@@ -20,8 +20,7 @@ const Navigation = () => {
             opacity: 0,
             duration: 0.5,
         });
-
-    })
+    }, []);
 
     return (
         <>
