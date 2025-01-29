@@ -33,7 +33,7 @@ const Home = () => {
 
   const animate = (element, direction, delay = 0, label) => ({
     from: {
-      [direction.includes('x') ? 'x' : 'y']: direction.includes('-') ? '-100%' : '100%',
+      [direction.includes('x') ? 'x' : 'y']: direction.includes('-') ? '-50%' : '50%',
       opacity: 0
     },
     to: {
