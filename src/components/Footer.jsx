@@ -2,20 +2,48 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import { useEffect, useState } from "react";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from 'gsap';
 
 export const Footer = () => {
-    const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(true);
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setLoading(false);
+    //     }, 250)
+    // }, [])
 
     useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 250)
-    })
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from("footer", {
+            scrollTrigger: {
+                trigger: "footer",
+                start: "top 98%",
+                toggleActions: "play none none reverse"
+            },
+            y: 0,
+            opacity: 0,
+            duration: 1,
+            ease: "steps(3)"
+        });
+
+        gsap.from(".border-t-2", {
+            scrollTrigger: {
+                trigger: "footer",
+                start: "top 98%",
+            },
+            width: 0,
+            duration: 1.5,
+            ease: "steps(3)"
+        });
+    }, []);
 
     return (
-        !loading &&
+        // !loading &&
         <footer>
-            <div className="border-t-2 container mx-auto dark:border-white border-black flex justify-between px-5 items-center duration-300">
+            <div className="border-t-2 container mx-auto dark:border-white border-black flex justify-between px-5 items-center duration-300 overflow-hidden">
                 <p className="md:text-lg text-xs font-light dark:text-white my-3 duration-300">
                     .Rohit Khatri
                 </p>
