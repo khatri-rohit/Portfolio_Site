@@ -1,18 +1,11 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
 export const Footer = () => {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 250)
-    }, [])
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -26,7 +19,7 @@ export const Footer = () => {
             y: 0,
             opacity: 0,
             duration: 0.5,
-            ease: "steps(1)"
+            ease: "power1.in"
         });
 
         gsap.from(".border-t-2", {
@@ -36,12 +29,11 @@ export const Footer = () => {
             },
             width: 0,
             duration: 1,
-            ease: "steps(1)"
+            ease: "power2.in"
         });
     }, []);
 
     return (
-        !loading &&
         <footer>
             <div className="border-t-2 container mx-auto dark:border-white border-black flex justify-between px-5 items-center duration-300 overflow-hidden">
                 <p className="md:text-lg text-xs font-light dark:text-white my-3 duration-300">
