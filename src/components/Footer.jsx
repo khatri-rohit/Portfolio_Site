@@ -6,13 +6,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
 export const Footer = () => {
-    // const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setLoading(false);
-    //     }, 250)
-    // }, [])
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 250)
+    }, [])
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +41,7 @@ export const Footer = () => {
     }, []);
 
     return (
-        // !loading &&
+        !loading &&
         <footer>
             <div className="border-t-2 container mx-auto dark:border-white border-black flex justify-between px-5 items-center duration-300 overflow-hidden">
                 <p className="md:text-lg text-xs font-light dark:text-white my-3 duration-300">
