@@ -120,9 +120,8 @@ const Home = () => {
         ease: "steps(1)",
         scrollTrigger: {
           trigger: linkedInRef.current,
-          start: "top 100%",
-          end: "top 100%",
-          scrub: false,
+          start: "top 95%",
+          end: "top 95%",
         }
       }
     );
@@ -137,9 +136,8 @@ const Home = () => {
         ease: "steps(1)",
         scrollTrigger: {
           trigger: twitterRef.current,
-          start: "top 100%",
-          end: "top 100%",
-          scrub: false,
+          start: "top 95%",
+          end: "top 95%",
         }
       }
     );
@@ -154,9 +152,8 @@ const Home = () => {
         ease: "steps(1)",
         scrollTrigger: {
           trigger: instagramRef.current,
-          start: "top 100%",
-          end: "top 100%",
-          scrub: false,
+          start: "top 95%",
+          end: "top 95%",
         }
       }
     );
