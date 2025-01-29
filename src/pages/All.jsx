@@ -12,9 +12,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef, useEffect } from 'react';
 
-gsap.registerPlugin(ScrollTrigger);
-
-
 const Home = () => {
 
   const profileRef = useRef();
