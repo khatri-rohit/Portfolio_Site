@@ -8,7 +8,6 @@ import Skills from "../components/Skills";
 import Spotify from "../components/Spotify";
 import Twitter from "../components/Twitter";
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef, useEffect } from 'react';
 
 const Projects = () => {
@@ -17,8 +16,6 @@ const Projects = () => {
   const profileRef = useRef();
   const githubRef = useRef();
   const linkedInRef = useRef();
-
-  gsap.registerPlugin(ScrollTrigger);
 
   const animate = (element, direction, delay = 0, label) => ({
     from: {
