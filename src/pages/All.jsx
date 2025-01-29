@@ -43,8 +43,8 @@ const Home = () => {
       ease: "steps(1)",
       scrollTrigger: element.current.classList.contains('md:block') ? {
         trigger: element.current,
-        start: "top 95%",
-        end: "top 95%"
+        start: "top 90%",
+        end: "top 90%"
       } : null
     },
     label
