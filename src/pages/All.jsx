@@ -32,136 +32,50 @@ const Home = () => {
   const twitterMobRef = useRef();
   const instagramMobRef = useRef();
 
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
 
-  const componentTimeLine = (tl) => {
-    tl.fromTo(profileRef.current,
-      {
-        x: "-100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        delay: 0.5,
-        // duration: 0.5,
-        ease: "steps(1)",
-      }
-    );
-    tl.fromTo(mapRef.current,
-      {
-        x: "100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        // duration: 0.5,
-        ease: "steps(1)",
-      }
-    );
-    tl.fromTo(skillRef.current,
-      {
-        x: "-100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        // duration: 0.5,
-        ease: "steps(1)",
-      }
-    );
-    tl.fromTo(playerRef.current,
-      {
-        x: "100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        // duration: 0.5,
-        ease: "steps(1)",
-      }
-    );
-    tl.fromTo(projectRef.current,
-      {
-        y: "-100%",
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        // duration: 0.5,
-        ease: "steps(1)",
-      }
-    );
-    tl.fromTo(githubRef.current,
-      {
-        x: "100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        // duration: 0.5,
-        ease: "steps(1)",
-      }
-    );
-    tl.fromTo(linkedInRef.current,
-      {
-        x: "-100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        delay: 0.2,
-        ease: "steps(1)",
-        scrollTrigger: {
-          trigger: linkedInRef.current,
-          start: "top 95%",
-          end: "top 95%",
-        }
-      }
-    );
-    tl.fromTo(twitterRef.current,
-      {
-        y: "100%",
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "steps(1)",
-        scrollTrigger: {
-          trigger: twitterRef.current,
-          start: "top 95%",
-          end: "top 95%",
-        }
-      }
-    );
-    tl.fromTo(instagramRef.current,
-      {
-        x: "100%",
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        ease: "steps(1)",
-        scrollTrigger: {
-          trigger: instagramRef.current,
-          start: "top 95%",
-          end: "top 95%",
-        }
-      }
-    );
-  }
+  const animate = (element, direction, delay = 0, label) => ({
+    from: {
+      [direction.includes('x') ? 'x' : 'y']: direction.includes('-') ? '-100%' : '100%',
+      opacity: 0
+    },
+    to: {
+      [direction.includes('x') ? 'x' : 'y']: 0,
+      opacity: 1,
+      delay,
+      ease: "steps(1)",
+      scrollTrigger: element.current.classList.contains('md:block') ? {
+        trigger: element.current,
+        start: "top 95%",
+        end: "top 95%"
+      } : null
+    },
+    label
+  });
 
-  useEffect(() => { // Use useEffect for one-time animation
+  useEffect(() => {
     const tl = gsap.timeline();
-    componentTimeLine(tl);
+
+    // Main components
+    const mainAnimations = [
+      [profileRef, '-x', 0.5],
+      [mapRef, 'x'],
+      [skillRef, '-x'],
+      [playerRef, 'x'],
+      [projectRef, '-y']
+    ].forEach(([ref, dir, delay]) =>
+      tl.fromTo(ref.current, animate(ref, dir, delay).from, animate(ref, dir, delay).to)
+    );
+
+    // Social components
+    const socialRefs = [
+      [githubRef, 'x'], [linkedInRef, '-x', 0.2],
+      [twitterRef, 'y'], [instagramRef, 'x'],
+      [githubMobRef, '-x', 0, 'left'], [linkedinMobRef, 'x', 0.2, 'right'],
+      [twitterMobRef, '-x', 0, 'left'], [instagramMobRef, 'x', 0, 'right']
+    ].forEach(([ref, dir, delay, label]) =>
+      tl.fromTo(ref.current, animate(ref, dir, delay, label).from, animate(ref, dir, delay, label).to)
+    );
   }, []);
 
   return (
