@@ -21,7 +21,7 @@ const router = createBrowserRouter(
       <Route path='' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/projects' element={<Projects />} />
-      <Route path='/project/blog' element={<Discussdev />} />
+      <Route path='/projects/blog' element={<Discussdev />} />
       <Route path='/media' element={<MediaLinks />} />
       <Route path='/*' element={<Redirect />} />
     </Route>

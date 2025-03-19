@@ -1,16 +1,16 @@
 
 export const Discussdev = () => {
-   
+
     return (
-        <div className="flex flex-col items-center mb-24">
-            <p className="text-5xl font-bold dark:text-white">DiscussDev</p>
+        <div className="flex flex-col items-center mb-20">
+            <p className="text-5xl font-bold dark:text-white pt-10">DiscussDev</p>
             <p className="text-2xl font-medium my-5 dark:text-white">Tech Blog Site</p>
             <div className="w-[70%] mb-5 flex flex-col items-center">
-                <img src="/img/project/blog.png" className="rounded-3xl drop-shadow-lg dark:text-white lg:shadow-lg h-[35em] object-cover" />
+                <img src="/img/project/blog_1.png" className="rounded-3xl drop-shadow-lg dark:text-white lg:shadow-lg h-[35em] object-cover" />
             </div>
 
             <div className="mt-12">
-                <p className="text-2xl font-bold dark:text-white">
+                <p className="text-2xl text-center font-bold dark:text-white">
                     Built and deployed with
                 </p>
                 <div className="images flex items-center my-1">
@@ -32,7 +32,7 @@ export const Discussdev = () => {
                     Key Features:
                 </p>
 
-                <ul className="my-2 w-[90%] mx-auto">
+                <ul className="my-2 w-[90%] mx-auto list-disc md:text-xl">
                     <li className="mb-1 tracking-wide">
                         <strong>User Authentication</strong>: Sign up, log in, and manage user accounts securely.
                     </li>
@@ -47,7 +47,7 @@ export const Discussdev = () => {
                     </li>
                 </ul>
 
-                <p>Deployed on <strong>Vercel</strong>, the platform is optimized for fast load times and seamless performance.</p>
+                <p className="md:text-lg">Deployed on <strong>Vercel</strong>, the platform is optimized for fast load times and seamless performance.</p>
             </div>
         </div>
     )

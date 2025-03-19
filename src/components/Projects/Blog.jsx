@@ -25,7 +25,7 @@ const Blog = () => {
                 <a href="https://discussdev.vercel.app/" target="_blank" className="my-1 px-4 py-2 bg-slate-300 hover:bg-slate-600 duration-300 hover:text-white rounded-full font-semibold text-[1em] hover:text-[1.08rem]">
                     View Project
                 </a>
-                <NavLink to={'/project/blog'} className="my-1 px-4 py-2 bg-slate-300 text-[1em] hover:text-[1.08rem] rounded-full font-medium duration-300">
+                <NavLink to={'/projects/blog'} className="my-1 px-4 py-2 bg-slate-300 text-[1em] hover:text-[1.08rem] rounded-full font-medium duration-300">
                     About Project
                 </NavLink>
             </div>
